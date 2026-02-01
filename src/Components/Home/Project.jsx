@@ -5,6 +5,8 @@ import video1 from '../../assets/video/CF1.mp4'
 import video2 from '../../assets/video/CF2.mp4'
 import video3 from '../../assets/video/CF3.mp4'
 import video4 from '../../assets/video/CF4.mp4'
+import png from '../../assets/img2.jpg';
+
 
 const projects = [
     {
@@ -12,7 +14,7 @@ const projects = [
         title: "Product Visualization",
         category: "3D Animation",
         video: video1,
-        logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=200&fit=crop"
+        logo: png
     },
     {
         id: 2,
