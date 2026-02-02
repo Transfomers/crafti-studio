@@ -8,7 +8,31 @@ import vdo1 from '../../assets/video/CF1.mp4';
 import vdo2 from '../../assets/video/CF2.mp4';
 import vdo3 from '../../assets/video/CF3.mp4';
 import vdo4 from '../../assets/video/CF4.mp4';
+import img from '../../assets/Image/img1.png'
 
+import logo1 from '../../assets/Image/Systema.png'
+import png1 from '../../assets/Image/img (7).png'
+import png2 from '../../assets/Image/img (8).png'
+import png3 from '../../assets/Image/img (9).png'
+import png4 from '../../assets/Image/img (11).png'
+
+import logo2 from '../../assets/Image/jamuna-bank-logo.png'
+import png5 from '../../assets/Image/img (19).png'
+import png6 from '../../assets/Image/img (20).png'
+import png7 from '../../assets/Image/img (21).png'
+import png8 from '../../assets/Image/img (23).png'
+
+import logo3 from '../../assets/Image/walton-logo.png'
+import png9 from '../../assets/Image/img (2).png'
+import png10 from '../../assets/Image/img (3).png'
+import png11 from '../../assets/Image/img (4).png'
+import png12 from '../../assets/Image/img (5).png'
+
+import logo4 from '../../assets/Image/sneaker-shoes-logo.jpg'
+import png13 from '../../assets/Image/img (13).png'
+import png14 from '../../assets/Image/img (14).png'
+import png15 from '../../assets/Image/img (15).png'
+import png16 from '../../assets/Image/img (16).png'
 
 
 
@@ -20,10 +44,10 @@ const OurStudio = () => {
   const teamMembers = [
     {
       id: 1,
-      name: 'Sarah Johnson',
+      name: 'Nazmul Hasan',
       role: 'Creative Director',
       bio: 'Leading creative vision with 10+ years of experience in 3D animation and motion graphics.',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=600&fit=crop',
+      avatar: img,
       specialty: '3D Animation',
       experience: '10+ Years'
     },
@@ -63,7 +87,7 @@ const OurStudio = () => {
     category: '3D Product Animation',
     description: 'High-precision 3D TVC visualizing advanced dental cleaning technology.',
     video: vdo1,
-    logo: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=200&h=200&fit=crop',
+    logo: logo1,
     client: 'Lions Bangladesh',
     year: '2024',
     duration: '1.5 months',
@@ -72,10 +96,10 @@ const OurStudio = () => {
     process: 'High-fidelity teeth and gum models were built in Blender, followed by precision bristle simulations to demonstrate cleaning mechanics. Shaders were tuned to reflect enamel gloss and bristle translucency. Final animation was composited and polished for nationwide TV broadcast.',
     results: 'Delivered a technically accurate and visually premium TVC that successfully communicated the product’s scientific benefits and aligned with the brand’s healthcare positioning.',
     images: [
-      'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1606813902912-6c84a2bb3c7d?w=1200&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1606813902912-6c84a2bb3c7d?w=1200&h=800&fit=crop'
+      png1,
+      png2,
+      png3,
+      png4
     ],
     technologies: ['Blender', 'Compositing'],
     testimonial: {
@@ -91,7 +115,7 @@ const OurStudio = () => {
     category: '3D Motion Graphics',
     description: 'Luxury-focused 3D commercial for premium financial branding.',
     video: vdo2,
-    logo: 'https://images.unsplash.com/photo-1612831661966-49b0d5ff28c5?w=200&h=200&fit=crop',
+    logo: logo2,
     client: 'City Bank',
     year: '2024',
     duration: '2 months',
@@ -100,10 +124,10 @@ const OurStudio = () => {
     process: 'The card was modeled in 3D, materials were developed to reflect metallic and matte surfaces, and lighting was designed to create a luxury mood. Motion graphics, camera animation, and compositing finalized the TVC.',
     results: 'The campaign achieved strong brand recall and positioned the Platinum Reserve card as a premium lifestyle product.',
     images: [
-      'https://images.unsplash.com/photo-1612831661966-49b0d5ff28c5?w=1200&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1605902711622-cfb43c4437d2?w=1200&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1612831661966-49b0d5ff28c5?w=1200&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1605902711622-cfb43c4437d2?w=1200&h=800&fit=crop'
+      png8,
+      png6,
+      png7,
+      png5
     ],
     technologies: ['Blender', 'After Effects', 'Compositing'],
     testimonial: {
@@ -119,7 +143,7 @@ const OurStudio = () => {
     category: '3D Product Animation',
     description: 'Cinematic fluid-driven visualization of water purification technology.',
     video: vdo3,
-    logo: 'https://images.unsplash.com/photo-1581093588401-22f6360b5d54?w=200&h=200&fit=crop',
+    logo: logo3,
     client: 'Walton Home Appliance',
     year: '2024',
     duration: '3 months',
@@ -128,10 +152,10 @@ const OurStudio = () => {
     process: 'Water simulations were generated in Houdini, internal filters were modeled in Blender, and lighting was optimized for a dark premium look. Cycles rendering and compositing finalized the visuals.',
     results: 'Delivered a cinematic TVC that elevated product trust and showcased technical innovation clearly.',
     images: [
-      'https://images.unsplash.com/photo-1581093588401-22f6360b5d54?w=1200&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=1200&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1581093588401-22f6360b5d54?w=1200&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=1200&h=800&fit=crop'
+      png9,
+      png10,
+      png11,
+      png12
     ],
     technologies: ['Blender', 'Houdini', 'Compositing'],
     testimonial: {
@@ -147,7 +171,7 @@ const OurStudio = () => {
     category: '3D Product Animation',
     description: 'High-energy sneaker showcase with cinematic motion and transitions.',
     video: vdo4,
-    logo: 'https://images.unsplash.com/photo-1528701800489-20be3c8d4f47?w=200&h=200&fit=crop',
+    logo: logo4,
     client: 'Sprint',
     year: '2024',
     duration: '2 months',
@@ -156,10 +180,10 @@ const OurStudio = () => {
     process: 'Scans were cleaned and retopologized in Blender, materials refined, animations choreographed, and final compositing polished.',
     results: 'Created a visually powerful sneaker campaign with smooth transitions and premium realism.',
     images: [
-      'https://images.unsplash.com/photo-1528701800489-20be3c8d4f47?w=1200&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1528701800489-20be3c8d4f47?w=1200&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200&h=800&fit=crop'
+      png13,
+      png14,
+      png15,
+      png16
     ],
     technologies: ['Blender', '3D Scanning', 'Compositing'],
     testimonial: {
@@ -413,7 +437,7 @@ const CaseStudyCard = ({ project, index, onClick }) => {
             <img
               src={project.logo}
               alt="logo"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover bg-white"
             />
           </div>
         </div>
