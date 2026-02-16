@@ -30,9 +30,9 @@ const SecondTitle = () => {
         />
 
         {/* Black Overlay */}
-         {/* <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black via-black/40 to-transparent" /> */}
- <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black via-black/30 to-transparent" />
- <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black via-black/60 to-transparent" />
+        {/* <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black via-black/40 to-transparent" /> */}
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black via-black/30 to-transparent" />
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black via-black/60 to-transparent" />
         {/* Content */}
         <div className="relative z-10 w-full 
           px-4 sm:px-6 md:px-12 lg:px-20
@@ -40,8 +40,8 @@ const SecondTitle = () => {
         >
           {/* Motion Title */}
           <motion.div
-            
-            className="font-KronaOne  md:px-15 pt-15 text-red-600 text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-7xl 
+
+            className="font-KronaOne  md:px-15 pt-15 text-gray-100 text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-7xl 
               font- leading-none tracking-tighter relative"
           >
             7007 Studio is a CGI, VFX, post-production, and gaming studio.
@@ -50,7 +50,7 @@ const SecondTitle = () => {
 
           {/* Bottom White Text */}
           <div className="md:px-15 mt-10 md:mt-12 pb-15">
-            <p className="font-KronaOne text-white text-xl  md:text-4xl lg:text-2xl leading-snug md:leading-tight tracking-tight">
+            <p className="font-KronaOne text-gray-400 text-xl  md:text-4xl lg:text-2xl leading-snug md:leading-tight tracking-tight">
               We collaborate <br />
               with studios, agencies, and brands to deliver <br />
               production-ready digital content.

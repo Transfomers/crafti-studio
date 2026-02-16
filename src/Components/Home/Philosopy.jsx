@@ -69,7 +69,7 @@ const Philosophy = () => {
                   viewport={{ once: true, amount: 0.3 }}
                   className={`text-xl md:text-2xl leading-[1.2] tracking-wide`}
                   style={{
-                    color: line.color === "red" ? '#ff0000' : '#ffffff',
+                    color: '#ffffff',
                     letterSpacing: '0.08em',
                     perspective: "1000px"
                   }}
