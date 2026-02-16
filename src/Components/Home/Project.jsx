@@ -79,7 +79,7 @@ const Project = () => {
                             <div className="absolute inset-0 bg-black/65" />
 
                             {/* Card Content */}
-                            <div className="relative z-10 p-6 sm:p-8 md:p-10 h-full flex flex-col justify-between">
+                            <div className="relative z-10 p-6  h-full flex flex-col justify-between">
 
                                 {/* Top */}
                                 <div>
@@ -87,26 +87,29 @@ const Project = () => {
                                         {item.category}
                                     </span>
 
-                                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-wide">
-                                        {item.title}
-                                    </h3>
+
                                 </div>
 
                                 {/* Bottom */}
-                                <div className="flex items-center justify-between pt-6 sm:pt-8 md:pt-12 border-t border-white/20">
-                                    <NavLink
-                                        to="/our_studio"
-                                        className="text-xs sm:text-sm md:text-sm tracking-[0.35em] sm:tracking-[0.4em] text-gray-300 uppercase hover:text-red-500 transition-colors duration-300"
-                                    >
-                                        View Project
-                                    </NavLink>
+                                <div className="pt-6 sm:pt-8 md:pt-20">
+                                    <h3 className="text-2xl sm:text-3xl  font-bold leading-tight tracking-wide">
+                                        {item.title}
+                                    </h3>
+                                    <div className="flex items-center justify-between mt-2 border-t border-white/20">
+                                        <NavLink
+                                            to="/our_studio"
+                                            className="text-xs sm:text-sm md:text-sm tracking-[0.35em] sm:tracking-[0.4em] text-gray-300 uppercase hover:text-red-500 transition-colors duration-300"
+                                        >
+                                            View Project
+                                        </NavLink>
 
-                                    <div className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border border-white/30">
-                                        <img
-                                            src={item.logo}
-                                            alt="logo"
-                                            className="w-full h-full object-cover bg-white"
-                                        />
+                                        <div className="relative w-12 h-12 mt-2 rounded-full overflow-hidden border border-white/30">
+                                            <img
+                                                src={item.logo}
+                                                alt="logo"
+                                                className="w-full h-full object-cover"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </div>

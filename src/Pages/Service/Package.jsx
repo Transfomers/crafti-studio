@@ -317,10 +317,7 @@ const Package = () => {
         <div className="hidden lg:flex relative justify-between items-center mb-20">
           {/* Left Title */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }} 
-            viewport={{ once: true }}
-            whileHover={{ scale: 1.05 }}
+            
             className="group flex items-center gap-4 cursor-pointer"
           >
             <h2 className="text-4xl md:text-4xl font-KronaOne text-white tracking-tighter">
@@ -330,52 +327,34 @@ const Package = () => {
           </motion.div>
 
           {/* Middle Divider */}
-          <motion.div
-            initial={{ height: 0 }}
-            whileInView={{ height: '80px' }}
-            viewport={{ once: true }}
-            className="absolute left-1/2 -translate-x-1/2 w-[2px] bg-red-500"
-          />
+          
 
           {/* Right Title */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            whileHover={{ scale: 1.05 }}
-            className="group flex items-center gap-4 cursor-pointer"
-          >
-            <h2 className="text-4xl md:text-4xl font-KronaOne text-white tracking-tighter">
-              Custom <span className="text-red-500">Solutions</span>
-            </h2>
-            <span className="absolute right-0 -bottom-3 h-[2px] w-0 bg-red-500 group-hover:w-full transition-all duration-500" />
-          </motion.div>
+          
         </div>
       </div>
 
       {/* Two Column Layout */}
       <div className="scroll-section max-w-7xl mx-auto px-4 md:px-8">
-        <div className="relative flex flex-col lg:flex-row gap-16 justify-between">
+        <div className="relative   justify-between">
           {/* Vertical Center Line (Desktop Only) */}
-          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-500/30 via-red-500/50 to-red-500/30 -translate-x-1/2">
+          {/* <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-500/30 via-red-500/50 to-red-500/30 -translate-x-1/2">
             <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-red-500 rounded-full shadow-lg shadow-red-500/50" />
 
-            {/* Animated Middle Dot */}
+            
             <div
               ref={dotRef}
               className="absolute top-0 left-1/2 -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-red-500 to-red-600 rounded-full shadow-xl shadow-red-500/70"
             />
 
             <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-red-500 rounded-full shadow-lg shadow-red-500/50" />
-          </div>
+          </div> */}
 
 
           {/* Left Column (Gig Based) */}
-          <div className="flex-1 space-y-12">
+          <div className=" space-y-12 grid grid-cols-2 gap-16">
             {/* Mobile Title */}
-            <h2 className="lg:hidden text-3xl font-KronaOne text-white text-center tracking-tighter mb-8">
-              Gig <span className="text-red-500">Services</span>
-            </h2>
+            
 
             {leftColumn.map((item, index) => (
               <ServiceCard
@@ -386,10 +365,19 @@ const Package = () => {
               />
             ))}
           </div>
+          <motion.div
+            
+            className="group flex items-center my-10 gap-4 cursor-pointer"
+          >
+            <h2 className="text-4xl md:text-4xl font-KronaOne text-white tracking-tighter">
+              Custom <span className="text-red-500">Solutions</span>
+            </h2>
+            <span className="absolute right-0 -bottom-3 h-[2px] w-0 bg-red-500 group-hover:w-full transition-all duration-500" />
+          </motion.div>
 
           {/* Right Column (Custom Based) */}
-          <div className="flex-1 space-y-12">
-            {/* Mobile Title */}
+          <div className=" space-y-12 grid grid-cols-2 gap-16">
+            
             <h2 className="lg:hidden text-3xl font-KronaOne text-white text-center tracking-tighter mb-8">
               Custom <span className="text-red-500">Solutions</span>
             </h2>
