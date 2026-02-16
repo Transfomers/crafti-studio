@@ -480,7 +480,7 @@ const ServiceModal = ({ service, onClose }) => {
       >
 
         {/* MAIN GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-5">
+        <div className="grid grid-cols-1 lg:grid-cols-5 sm:m-15 lg:m-0">
 
           {/* LEFT SIDE */}
           <div className="lg:col-span-3 p-6 lg:p-8 space-y-6 border-r border-red-500/20">

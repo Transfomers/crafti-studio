@@ -112,13 +112,6 @@ const Footer = () => {
               <p className="text-white text-sm md:text-base mb-2">
                 We're always looking for creative minds.
               </p>
-              <a
-                href="mailto:careers@7007studio.com"
-                className="inline-flex items-center gap-2 text-white text-sm md:text-base underline hover:text-red-600 transition-colors"
-              >
-                <Briefcase className="w-4 h-4" />
-                <span>careers@7007studio.com</span>
-              </a>
             </div>
 
           </div>
