@@ -53,28 +53,28 @@ const OurStudio = () => {
     },
     {
       id: 2,
-      name: 'Michael Chen',
+      name: 'YEAHYEA ABDULLAH',
       role: '3D Artist',
       bio: 'Expert in photorealistic rendering and complex 3D modeling with a passion for detail.',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop',
+      avatar: 'https://i.pinimg.com/736x/fb/3b/06/fb3b06e4729ccf1940543485e0f57919.jpg',
       specialty: '3D Modeling',
       experience: '8+ Years'
     },
     {
       id: 3,
-      name: 'Emma Davis',
+      name: 'MD. MEHRAB',
       role: 'Motion Designer',
       bio: 'Specializing in dynamic motion graphics and seamless animations.',
-      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&h=600&fit=crop',
+      avatar: 'https://images.unsplash.com/photo-1664730904126-0c0a1c747ee0?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmFuZ2xhZGVzaGklMjBib3l8ZW58MHx8MHx8fDA%3D',
       specialty: 'Motion Graphics',
       experience: '7+ Years'
     },
     {
       id: 4,
-      name: 'James Wilson',
+      name: 'TORIKU ISLAM',
       role: 'VFX Supervisor',
       bio: 'Creating stunning visual effects and bringing impossible visions to life.',
-      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=600&fit=crop',
+      avatar: 'https://p3.hippopx.com/preview/950/539/stylish-handsome-cute-romantic-bangladeshi-bangladeshi-boy-cute-smart-boy-images-boy-attitude-stock-wallpapers-romantic-boy-pic-smart-boy-wallpaper-download-thumbnail.jpg',
       specialty: 'VFX',
       experience: '12+ Years'
     }
@@ -314,8 +314,8 @@ const TeamCard = ({ member, index }) => {
             {member.role}
           </span>
 
-          <h3 className="font-bold leading-tight tracking-wide mb-3 md:mb-4
-                         text-xl sm:text-2xl md:text-4xl">
+          <h3 className="font-bold leading- tracking-widest mb-3 md:mb-4
+                         text-xl sm:text-2xl uppercase">
             {member.name}
           </h3>
 
@@ -411,8 +411,8 @@ const CaseStudyCard = ({ project, index, onClick }) => {
             {project.category}
           </span>
 
-          <h3 className="font-bold leading-tight tracking-wide
-                         text-xl sm:text-2xl md:text-4xl">
+          <h3 className="font-bold leading- tracking-wide
+                         text-xl sm:text-2xl ">
             {project.title}
           </h3>
         </div>

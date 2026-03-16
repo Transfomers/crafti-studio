@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import vdo1 from '../../assets/video/montage footage CF.mp4';
 import vdo2 from '../../assets/video/montage footage CF.mp4';
 
+
 const projects = [
   { title: "Project 1", src: vdo1 },
   { title: "Project 2", src: vdo2 },
@@ -18,14 +19,14 @@ const Skiper17 = () => {
   });
 
   return (
-    <ReactLenis root>
+    <ReactLenis root  >
       <main
         ref={container}
         style={{ paddingBottom: `${projects.length * 10}vh` }}
         className="relative bg-black flex w-full flex-col items-center"
       >
         {/* Section Title */}
-        <h1 className="
+        <h1 id="show-reels" className="
           font-extrabold font-KronaOne text-red-600 transition-colors
           tracking-[-0.03em] sm:tracking-tight lg:tracking-wide
           leading-[1.0] sm:leading-[0.9] md:leading-[0.85] lg:leading-[0.8]

@@ -46,11 +46,12 @@ const HomeContact = () => {
         className="w-full px-4 md:px-20 lg:px-40 grid grid-cols-1 md:grid-cols-2 rounded-2xl overflow-hidden shadow-2xl"
       >
         {/* LEFT SIDE */}
-        <motion.div
+        <div className="">
+          <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="bg-white p-10 rounded-2xl"
+          className="h-72 p-10 rounded-2xl bg-white mt-10"
         >
           <textarea
             name="message"
@@ -62,13 +63,14 @@ const HomeContact = () => {
             required
           />
         </motion.div>
+        </div>
 
         {/* RIGHT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-KronaOne bg-black p-10 flex flex-col justify-center"
+          className="font-KronaOne  bg-black p-10 flex flex-col justify-center"
         >
           <h2 className="text-3xl font-bold text-white mb-8">
             Let's <span className="text-red-500">Talk</span>
@@ -100,7 +102,7 @@ const HomeContact = () => {
             />
 
             <motion.button
-              whileHover={{ scale: 1.05 }}
+              
               whileTap={{ scale: 0.95 }}
               type="submit"
               className="rounded-xl w-full mt-6 bg-red-500 hover:bg-red-600 text-white font-bold py-3 flex items-center justify-center gap-2 shadow-lg shadow-red-500/50 transition-all"

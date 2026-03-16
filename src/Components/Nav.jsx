@@ -96,7 +96,7 @@ const Nav = () => {
       <div className="fixed top-0  z-[999] w-full text-white px-5  md:px-20 py-10 flex justify-between items-center font-OdibeeSans tracking-wider">
         {/* Logo */}
         <div className="overflow-hidden">
-          <img src={logo} className="w-12 navlinks-li" alt="logo" />
+          <NavLink to={'/'}><img src={logo} className="w-12 navlinks-li" alt="logo" /></NavLink>
         </div>
 
         {/* Menu Icon */}

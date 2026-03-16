@@ -352,7 +352,7 @@ const Package = () => {
 
 
           {/* Left Column (Gig Based) */}
-          <div className=" space-y-12 grid grid-cols-2 gap-16">
+          <div className=" md:space-y-12 grid grid-cols-2 gap-5 md:gap-16">
             {/* Mobile Title */}
             
 
@@ -367,7 +367,7 @@ const Package = () => {
           </div>
           <motion.div
             
-            className="group flex items-center my-10 gap-4 cursor-pointer"
+            className="group flex items-center mt-40 mb-10 gap-4 cursor-pointer"
           >
             <h2 className="text-4xl md:text-4xl font-KronaOne text-white tracking-tighter">
               Custom <span className="text-red-500">Solutions</span>
@@ -376,11 +376,9 @@ const Package = () => {
           </motion.div>
 
           {/* Right Column (Custom Based) */}
-          <div className=" space-y-12 grid grid-cols-2 gap-16">
+          <div className="md:space-y-12 grid grid-cols-2 gap-5 md:gap-16">
             
-            <h2 className="lg:hidden text-3xl font-KronaOne text-white text-center tracking-tighter mb-8">
-              Custom <span className="text-red-500">Solutions</span>
-            </h2>
+            
 
             {rightColumn.map((item, index) => (
               <ServiceCard

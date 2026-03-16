@@ -28,7 +28,7 @@ const Description = () => {
             <span className="text-red-500">1. </span>Structured <span className="text-red-500">(Gig-Based)</span> Support.
           </h3>
 
-          <p className="leading-relaxed text-red-500 text-sm sm:text-base">
+          <p className="leading-relaxed  text-sm sm:text-base">
             For projects with defined goals, timelines, and deliverables. This model works best when:
           </p>
 
@@ -47,7 +47,7 @@ const Description = () => {
             ))}
           </ul>
 
-          <p className="text-red-500 font-kronaOne mt-4 sm:mt-6 text-sm sm:text-base">Ideal for:</p>
+          <p className=" font-kronaOne mt-4 sm:mt-6 text-sm sm:text-base">Ideal for:</p>
 
           <ul className="space-y-2 sm:space-y-3">
             {[
@@ -65,7 +65,7 @@ const Description = () => {
             ))}
           </ul>
 
-          <p className="text-red-500 leading-relaxed pt-3 sm:pt-4 font-kronaOne text-sm sm:text-base">
+          <p className=" leading-relaxed pt-3 sm:pt-4 font-kronaOne text-sm sm:text-base">
             We focus on clean execution, technical accuracy, and consistent quality at every stage.
           </p>
         </motion.div>
@@ -83,11 +83,11 @@ const Description = () => {
             <span className="text-red-500">2. </span> Custom <span className="text-red-500">(Idea-Driven)</span> Collaboration
           </h3>
 
-          <p className="text-red-500 leading-relaxed text-sm sm:text-base font-kronaOne">
+          <p className=" leading-relaxed text-sm sm:text-base font-kronaOne">
             For concepts that are still evolving or require creative direction.
           </p>
 
-          <p className="text-red-500 font-kronaOne text-sm sm:text-base">If you have:</p>
+          <p className=" font-kronaOne text-sm sm:text-base">If you have:</p>
 
           <ul className="space-y-2 sm:space-y-3">
             {[
@@ -104,7 +104,7 @@ const Description = () => {
             ))}
           </ul>
 
-          <p className="text-red-500 leading-relaxed pt-3 sm:pt-4 font-kronaOne text-sm sm:text-base">
+          <p className=" leading-relaxed pt-3 sm:pt-4 font-kronaOne text-sm sm:text-base">
             We’re happy to explore it with you. This approach allows flexibility, experimentation, and deeper creative involvement — from early concepts to final delivery.
           </p>
         </motion.div>

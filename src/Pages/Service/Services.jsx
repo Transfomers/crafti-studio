@@ -9,7 +9,7 @@ const Services = () => {
   const containerRef = useRef(null);
 
   return (
-    <div className="relative min-h-screen text-white font-KronaOne" ref={containerRef}>
+    <div className="relative min-h-screen bg-black text-white font-KronaOne" ref={containerRef}>
       {/* Hero Section */}
       <div className="left-0 w-full h-screen z-0">
         <HeroSection />
@@ -23,17 +23,17 @@ const Services = () => {
 
       {/* Free Meeting Section */}
       <section className="w-full bg-black text-white font-kronaOne pt-10 px-4 sm:px-6 md:px-12 lg:px-48">
-        <p className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-kronaOne mb-4 sm:mb-6">
+        <p className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-kronaOne mb-4 sm:mb-6 mt-12">
           We offer
-          <span className="block text-gray-300 text-sm sm:text-lg md:text-xl font-kronaOne mt-2">
+          <span className="block text-gray-300 text-sm sm:text-lg md:text-xl font-kronaOne mt-8">
             a free meeting <span className="text-red-500">call to talk</span> through your challenge, concept, or curiosity — <br />
-            <span className="text-red-500 text-sm sm:text-lg md:text-xl">
+            <span className="text-sm sm:text-lg md:text-xl">
               even if you don’t need our services or are simply exploring.
             </span>
           </span>
         </p>
 
-        <p className="text-red-500 text-sm sm:text-lg md:text-xl font-kronaOne">
+        <p className="text-sm sm:text-lg md:text-xl font-kronaOne">
           No pitch. No pressure. Just a focused <span className="text-gray-400">discussion</span>.
         </p>
       </section>
@@ -42,9 +42,9 @@ const Services = () => {
       <Calender />
 
       {/* Tech Team Section */}
-      <section className="w-full bg-black text-white font-kronaOne px-4 sm:px-6 md:px-12 lg:px-48 pt-10">
+      <section className="w-full pt-20 bg-black text-white font-kronaOne px-4 sm:px-6 md:px-12 lg:px-48 pt-10">
         <p className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-kronaOne mb-2">
-          The Internal <span className="block text-red-500 text-gray-300 text-sm sm:text-lg md:text-xl mt-2">
+          The Internal <span className="block  text-gray-300 text-sm sm:text-lg md:text-xl mt-2">
             Tech Team for you
           </span>
         </p>
@@ -57,13 +57,13 @@ const Services = () => {
           bespoke internal systems.
         </p>
 
-        <p className="mt-6 sm:mt-8 text-red-500 text-sm sm:text-lg md:text-xl font-KronaOne tracking-tighter">
+        <p className="mt-6 sm:mt-8 mb-20 text-red-500 text-sm sm:text-lg md:text-xl font-KronaOne tracking-tighter">
           [ Book a 30-min Session ]
         </p>
       </section>
 
       {/* Meeting Section */}
-      <div className="relative z-15">
+      <div className="relative  z-15">
         <ServiceMotivation />
       </div>
     </div>

@@ -92,7 +92,7 @@ const Project = () => {
 
                                 {/* Bottom */}
                                 <div className="pt-6 sm:pt-8 md:pt-20">
-                                    <h3 className="text-2xl sm:text-3xl  font-bold leading-tight tracking-wide">
+                                    <h3 className="text-2xl   font-bold leading-tight tracking-wide">
                                         {item.title}
                                     </h3>
                                     <div className="flex items-center justify-between mt-2 border-t border-white/20">

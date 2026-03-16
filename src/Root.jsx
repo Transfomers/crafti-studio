@@ -1,7 +1,7 @@
 
 import { Outlet, useNavigate } from "react-router-dom";
 import Nav from "./Components/Nav";
-import logovideo from "../src/assets/video/logo2.mp4";
+import logovideo from "../src/assets/video/logo2.webm";
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -73,7 +73,7 @@ const Root = () => {
       <Nav></Nav>
       <Outlet></Outlet>
       <Curser></Curser>
-      <video src={logovideo} autoPlay
+      <video src={logovideo} autoPlay type="video/webm"
         muted
         loop
         playsInline

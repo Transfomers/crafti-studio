@@ -10,7 +10,7 @@ const openWhatsApp = () => {
   );
 };
 
-const Banner = () => {
+const Banner = ({ onShowReelsClick }) => {
   return (
     <div
       id="banner-page"
@@ -80,7 +80,7 @@ const Banner = () => {
             md:bottom-20 md:left-20
           "
         >
-          <a
+          <button onClick={onShowReelsClick}
             id='showreels-btn'
             className="
               text-3xl sm:text-4xl md:text-5xl
@@ -89,7 +89,7 @@ const Banner = () => {
             "
           >
             showreel
-          </a>
+          </button>
         </div>
       </div>
     </div>

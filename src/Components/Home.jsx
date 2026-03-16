@@ -13,13 +13,26 @@ import Philosophy from './Home/Philosopy';
 import Project from './Home/Project';
 import { CustomEase } from "gsap/CustomEase";
 import HomeContact from './HomeContact';
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { useRef } from 'react';
 
 
 
 const Home = () => {
-
+  gsap.registerPlugin(ScrollToPlugin);
   gsap.registerPlugin(CustomEase);
   gsap.registerPlugin(ScrollTrigger)
+const showReelsRef = useRef(null);
+const scrollToShowReels = () => {
+    gsap.to(window, {
+      duration: 1.5,
+      scrollTo: {
+        y: "#show-reels",
+        offsetY: 80, // if navbar fixed
+      },
+      ease: "power3.inOut",
+    });
+  };
 
   useGSAP(() => {
     CustomEase.create("myEase", "0.7, 0, 0.84, 0");
@@ -103,7 +116,7 @@ const Home = () => {
         />
 
 
-        <Banner />
+        <Banner onShowReelsClick={scrollToShowReels} />
       </section>
       <div id='navtrigger' className=' h-60 w-60 absolute top-20'></div>
 
@@ -118,7 +131,7 @@ const Home = () => {
 
       {/* <SkiperVideo></SkiperVideo> */}
 
-      <Skiper17></Skiper17>
+      <Skiper17 ref={showReelsRef}></Skiper17>
 
       <Project></Project>
 
