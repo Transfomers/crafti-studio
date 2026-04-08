@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Banner from './Home/Banner';
 import Marque from './Home/Marque';
 import img1 from '../assets/TLOGO.png'
@@ -6,17 +6,36 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import SecondTitle from './Home/SecondTitle';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import BlackScreen from './Shared/BlackScreen';
-import SplineSection from './Home/SplineSection';
 import ThiredTitle from './Home/ThiredTitle';
 import { Skiper17 } from './Home/Skiper17';
-
-import SkiperVideo from '../SkiperVideo';
 import ClientReview from '../Pages/ClientReview/ClientReview';
+import Philosophy from './Home/Philosopy';
+import Project from './Home/Project';
+import { CustomEase } from "gsap/CustomEase";
+import HomeContact from './HomeContact';
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { useRef } from 'react';
+
+
+
 const Home = () => {
+  gsap.registerPlugin(ScrollToPlugin);
+  gsap.registerPlugin(CustomEase);
   gsap.registerPlugin(ScrollTrigger)
+const showReelsRef = useRef(null);
+const scrollToShowReels = () => {
+    gsap.to(window, {
+      duration: 1.5,
+      scrollTo: {
+        y: "#show-reels",
+        offsetY: 80, // if navbar fixed
+      },
+      ease: "power3.inOut",
+    });
+  };
 
   useGSAP(() => {
+    CustomEase.create("myEase", "0.7, 0, 0.84, 0");
     gsap.to('#intro-logo', {
       scale: 70,
       opacity: 1,
@@ -27,7 +46,7 @@ const Home = () => {
         scrub: 1,
         pin: true,
         anticipatePin: 1,
-        refreshPriority: -1, // 👈 Add this
+        refreshPriority: -1, 
         markers: false,
         onLeave: () => {
           gsap.set('#intro-logo', { display: 'none' })
@@ -37,27 +56,54 @@ const Home = () => {
         }
       }
     })
-    gsap.from('.navlinks-li', {
-      y: -100,
-      opacity: 1,
-      stagger: 0.1,
+    const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#navtrigger',
         start: 'top top',
         end: 'top 7%',
         markers: false,
-
-
-
-
       }
-    })
-    
+    });
+
+    // All animations in sequence
+    tl.from('.navlinks-li', {
+      y: -100,
+      delay: 0.4,
+      opacity: 0,
+      ease: 'power2.in',
+      duration: 0.6
+    });
+    tl.from('#nav-close-btn', {
+      y: -100,
+      opacity: 0,
+
+      duration: 0.6
+    }, "-=0.4");
+    tl.from('#showreels-btn', {
+      y: 100,
+      opacity: 0,
+      ease: 'power2.in',
+      duration: 0.6
+    }, "-=0.4");
+    tl.from('#banner-whatapp-icon', {
+      x: 50,
+      opacity: 0,
+      ease: 'power2.in',
+      duration: 0.3
+    },);
+    tl.from('#banner-text-effect', {
+      x: -50,
+      opacity: 0,
+      ease: 'power2.in',
+      duration: 0.3
+    }, "-=0.3");
+
+
   })
 
   return (
     <div className='relative'>
-      {/* 🔒 PINNED SECTION */}
+      {/* PINNED SECTION */}
       <section
         id="intro-section"
         className="relative h-screen overflow-hidden"
@@ -70,24 +116,30 @@ const Home = () => {
         />
 
 
-        <Banner />
+        <Banner onShowReelsClick={scrollToShowReels} />
       </section>
       <div id='navtrigger' className=' h-60 w-60 absolute top-20'></div>
 
-      {/* 🚀 NORMAL SCROLL AFTER */}
+      {/* NORMAL SCROLL AFTER */}
+
       <ThiredTitle></ThiredTitle>
+
+
+
       <SecondTitle />
-      
-       {/* <SkiperVideo></SkiperVideo> */}
-      
-      <Skiper17></Skiper17>
+      <Philosophy></Philosophy>
+
+      {/* <SkiperVideo></SkiperVideo> */}
+
+      <Skiper17 ref={showReelsRef}></Skiper17>
+
+      <Project></Project>
 
       <ClientReview></ClientReview>
       <Marque></Marque>
-     
-      
-      
-      {/* <SplineSection></SplineSection> */}
+
+      <HomeContact></HomeContact>
+
     </div>
   )
 }
