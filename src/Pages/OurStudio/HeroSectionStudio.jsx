@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import vdo1 from "../../assets/video/montage footage CF.mp4";
 
@@ -25,24 +24,34 @@ const HeroSectionStudio = () => {
       >
         <div className="max-w-6xl mx-auto text-center space-y-4 sm:space-y-6">
 
-          {/* Big Title */}
-          <motion.h1
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-8xl lg:text-9xl font-bold mb-6 text-red-600 uppercase tracking-tighter"
-          >
-            Welcome 
-          </motion.h1>
+          {/* Big Title with Red Dot */}
+          <div className="relative inline-block">
+            {/* The Red Dot to the left */}
+            <motion.span
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.6, type: "spring", stiffness: 100 }}
+              className="absolute -left-8 sm:-left-16 md:-left-20 top-[20%] w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-red-600 shadow-[0_0_20px_#ef4444]"
+            />
+            
+            <motion.h1
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-5xl sm:text-8xl md:text-9xl lg:text-[9.5vw] font-black text-red-600 uppercase tracking-tighter leading-none"
+            >
+              WELCOME
+            </motion.h1>
+          </div>
 
           {/* Subtitle */}
           <motion.h2
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-2xl md:text-4xl lg:text-5xl font-bold mb-8 text-red-600 uppercase tracking-tighter"
+            className="text-xl sm:text-3xl md:text-4xl lg:text-[3vw] font-black text-red-600 uppercase tracking-wide mb-8"
           >
-            To 7007 Studio
+            TO CRAFTI STUDIO
           </motion.h2>
 
           {/* Description */}
@@ -60,12 +69,21 @@ const HeroSectionStudio = () => {
               md:leading-snug
               max-w-3xl 
               mx-auto
-              px-2 sm:px-0
+              px-4 sm:px-0
+              font-dmsans
             "
           >
             A place where ideas are shaped with intention, clarity, and craft.
             Everything we create begins with a clear idea and a focused process.
           </motion.p>
+
+          {/* Pulsing Red Dot at the bottom center */}
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.8, type: "spring", stiffness: 100 }}
+            className="w-4 h-4 rounded-full bg-red-600 shadow-[0_0_20px_#ef4444] mx-auto mt-12 animate-pulse"
+          />
 
         </div>
       </motion.div> 

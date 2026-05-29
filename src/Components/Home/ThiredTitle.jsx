@@ -38,11 +38,11 @@ const ThiredTitle = () => {
       {/* Text */}
       <div className="relative z-10 flex flex-col items-center text-white font-semibold uppercase leading-[0.8] tracking-[0.9em]">
         <h1 className="text-5xl lg:text-[13vw] overflow-hidden">
-          {splitText("7007", 0)}
+          {splitText("CRAFTI", 0)}
         </h1>
 
         <h1 className="text-[18vw] text-red-600 overflow-hidden">
-          {splitText("Studio", 0.4)}
+          {splitText("STUDIO", 0.4)}
         </h1>
       </div>
     </section>

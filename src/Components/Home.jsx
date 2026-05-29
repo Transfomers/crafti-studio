@@ -8,7 +8,7 @@ import SecondTitle from './Home/SecondTitle';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import ThiredTitle from './Home/ThiredTitle';
 import { Skiper17 } from './Home/Skiper17';
-import ClientReview from '../Pages/ClientReview/ClientReview';
+import HomeProcess from './Home/HomeProcess';
 import Philosophy from './Home/Philosopy';
 import Project from './Home/Project';
 import { CustomEase } from "gsap/CustomEase";
@@ -108,12 +108,33 @@ const scrollToShowReels = () => {
         id="intro-section"
         className="relative h-screen overflow-hidden"
       >
-        <img
-          src={img1}
+        <div
           id="intro-logo"
-          className="absolute inset-0 h-full w-full object-cover z-20"
-          alt=""
-        />
+          className="absolute inset-0 h-full w-full flex items-center justify-center bg-black z-20 select-none pointer-events-none"
+        >
+          <svg viewBox="0 0 200 200" className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="glow-filter-home" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="8" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            {/* Outer broken circular C ring in solid white */}
+            <path
+              d="M 95 35 A 65 65 0 1 0 160 100 H 135 A 40 40 0 1 1 95 60 V 35 Z"
+              fill="#ffffff"
+            />
+            {/* Top right corner arrowhead segment in solid crimson red with premium glow */}
+            <path
+              d="M 108 35 H 160 V 87 L 142 87 C 142 74 126 54 108 54 Z"
+              fill="#ff2a35"
+              filter="url(#glow-filter-home)"
+            />
+          </svg>
+        </div>
 
 
         <Banner onShowReelsClick={scrollToShowReels} />
@@ -135,7 +156,7 @@ const scrollToShowReels = () => {
 
       <Project></Project>
 
-      <ClientReview></ClientReview>
+      <HomeProcess />
       <Marque></Marque>
 
       <HomeContact></HomeContact>

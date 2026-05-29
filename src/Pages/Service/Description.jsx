@@ -22,21 +22,21 @@ const Description = () => {
           whileInView="visible"
           viewport={{ once: true }}
           whileHover={{ y: -4 }}
-          className="space-y-4 sm:space-y-5 p-6 sm:p-8 hover:shadow-[0_0_40px_rgba(239,68,68,0.15)] transition-all duration-500"
+          className="space-y-4 sm:space-y-5 p-6 sm:p-8 hover:shadow-[0_0_40px_rgba(239,68,68,0.15)] transition-all duration-500 border border-zinc-800 rounded-2xl bg-zinc-950/20 backdrop-blur-md"
         >
           <h3 className="text-xl sm:text-2xl font-kronaOne">
-            <span className="text-red-500">1. </span>Structured <span className="text-red-500">(Gig-Based)</span> Support.
+            <span className="text-red-500">1. </span>Strategic <span className="text-red-500">Product Development</span>
           </h3>
 
           <p className="leading-relaxed  text-sm sm:text-base">
-            For projects with defined goals, timelines, and deliverables. This model works best when:
+            For projects with defined goals, timelines, and product roadmaps. This model works best when:
           </p>
 
           <ul className="space-y-2 sm:space-y-3">
             {[
-              'The scope is clear',
-              'The outcome is well defined',
-              'You need reliable, production-ready results',
+              'The product scope is clear',
+              'The user experience is structured',
+              'You need high-performance, robust frontend systems',
             ].map((item, i) => (
               <li
                 key={i}
@@ -51,10 +51,10 @@ const Description = () => {
 
           <ul className="space-y-2 sm:space-y-3">
             {[
-              'Game assets & environments',
-              'Product visualization',
-              'Cinematic shots & trailers',
-              'Real-time Unreal Engine visuals',
+              'SaaS Platform Launches',
+              'High-Growth Startup Websites',
+              'Custom Web Architectures',
+              'AI Workflow Integrations',
             ].map((item, i) => (
               <li
                 key={i}
@@ -66,7 +66,7 @@ const Description = () => {
           </ul>
 
           <p className=" leading-relaxed pt-3 sm:pt-4 font-kronaOne text-sm sm:text-base">
-            We focus on clean execution, technical accuracy, and consistent quality at every stage.
+            We focus on beautiful, optimized frontend engineering, pixel-perfect UX, and secure integrations.
           </p>
         </motion.div>
 
@@ -77,23 +77,23 @@ const Description = () => {
           whileInView="visible"
           viewport={{ once: true }}
           whileHover={{ y: -4 }}
-          className="space-y-4 sm:space-y-5 p-6 sm:p-8 hover:shadow-[0_0_40px_rgba(239,68,68,0.15)] transition-all duration-500"
+          className="space-y-4 sm:space-y-5 p-6 sm:p-8 hover:shadow-[0_0_40px_rgba(239,68,68,0.15)] transition-all duration-500 border border-zinc-800 rounded-2xl bg-zinc-950/20 backdrop-blur-md"
         >
           <h3 className="text-xl sm:text-2xl font-kronaOne">
-            <span className="text-red-500">2. </span> Custom <span className="text-red-500">(Idea-Driven)</span> Collaboration
+            <span className="text-red-500">2. </span> Continuous <span className="text-red-500">Product Ownership</span>
           </h3>
 
           <p className=" leading-relaxed text-sm sm:text-base font-kronaOne">
-            For concepts that are still evolving or require creative direction.
+            For ongoing systems evolution, feature design, scaling support, and strategic direction.
           </p>
 
-          <p className=" font-kronaOne text-sm sm:text-base">If you have:</p>
+          <p className=" font-kronaOne text-sm sm:text-base">If you require:</p>
 
           <ul className="space-y-2 sm:space-y-3">
             {[
-              'An idea in progress',
-              'A problem that needs visual clarity',
-              'A concept without a fixed pipeline',
+              'Active roadmap design and feature prioritization',
+              'UX systems audit and continuous flow improvements',
+              'Ongoing scaling of software microservices and architectures',
             ].map((item, i) => (
               <li
                 key={i}
@@ -105,7 +105,7 @@ const Description = () => {
           </ul>
 
           <p className=" leading-relaxed pt-3 sm:pt-4 font-kronaOne text-sm sm:text-base">
-            We’re happy to explore it with you. This approach allows flexibility, experimentation, and deeper creative involvement — from early concepts to final delivery.
+            We act as your dedicated internal tech partner. This approach allows flexibility, ongoing sprint planning, and deeper integration with your operations.
           </p>
         </motion.div>
 

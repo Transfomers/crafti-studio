@@ -38,7 +38,7 @@ const SpliteText = ({text,size}) => {
       {/* Text */}
       <div className="relative z-10 flex flex-col items-center text-white font-semibold uppercase leading-[0.8] tracking-[0.9em]">
         <h1 className="text-5xl lg:text-[13vw] overflow-hidden">
-          {splitText("7007", 0)}
+          {splitText("CRAFTI", 0)}
         </h1>
 
         

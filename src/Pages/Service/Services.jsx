@@ -50,11 +50,11 @@ const Services = () => {
         </p>
 
         <p className="text-gray-300 text-sm sm:text-lg md:text-xl font-KronaOne leading-relaxed mt-4 sm:mt-6">
-          We build the custom tools and automations that power
-          <span className="text-red-500"> TVC, film, and game agencies</span>.
-          We act as your internal technical partner, providing the infrastructure
-          you need to scale production—from quick, ready-to-go gigs to
-          bespoke internal systems.
+          We build the custom platforms, websites, and automations that power
+          <span className="text-red-500"> high-growth startups and modern businesses</span>.
+          We act as your strategic technical partner, providing the infrastructure
+          you need to scale digital systems—from clean frontend code to
+          bespoke workflow automation.
         </p>
 
         <p className="mt-6 sm:mt-8 mb-20 text-red-500 text-sm sm:text-lg md:text-xl font-KronaOne tracking-tighter">

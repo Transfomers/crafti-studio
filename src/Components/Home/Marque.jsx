@@ -7,29 +7,24 @@ const Marque = () => {
 
     const services = [
         {
-            title: "Advanced 3D Modeling & Visual Design Solutions",
+            title: "Strategic Product Ownership & Roadmaps",
             details:
-                "End-to-end professional 3D modeling services crafted for games, films, advertisements, and interactive media. Every model is built with precision, clean topology, and industry-standard workflows to ensure both visual excellence and technical accuracy."
+                "Agile workflows, clear roadmaps, sprint planning, and sustainable product strategy built for long-term growth."
         },
         {
-            title: "High-Fidelity Character Modeling & Sculpting",
+            title: "High-Performance Web & SaaS Development",
             details:
-                "From concept art to production-ready characters, this service delivers anatomically accurate, expressive, and detailed character models. Optimized topology ensures smooth rigging, animation compatibility, and seamless integration into real-time or cinematic pipelines."
+                "Next.js, React, engineered frontend architectures, scalable systems, and optimized API integrations."
         },
         {
-            title: "Game-Ready 3D Assets with Performance Optimization",
+            title: "Premium UX/UI & Custom Design Systems",
             details:
-                "Production-quality assets designed specifically for real-time engines. Includes optimized polygon counts, clean UV layouts, proper LODs, and engine-ready exports to ensure maximum performance without sacrificing visual quality."
+                "State-of-the-art interactive designs, fluid user experiences, modular component libraries, and clean user flows."
         },
         {
-            title: "Cinematic Visual Development & Rendering Expertise",
+            title: "AI-Driven Automation & System Workflows",
             details:
-                "Specialized in lighting, composition, shading, and rendering to create visually compelling and cinematic results. Perfect for trailers, portfolio visuals, product showcases, and immersive storytelling experiences."
-        },
-        {
-            title: "Photorealistic Texturing & Physically-Based Materials",
-            details:
-                "High-quality PBR texturing with realistic materials, accurate surface details, and optimized UV mapping. Designed to maintain realism across multiple lighting environments and platforms while meeting modern production standards."
+                "Intelligent productivity tools, custom automation models, integrated AI workflows, and high-performance system pipelines."
         }
     ];
 

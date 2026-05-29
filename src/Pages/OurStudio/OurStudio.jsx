@@ -45,163 +45,163 @@ const OurStudio = () => {
     {
       id: 1,
       name: 'Nazmul Hasan',
-      role: 'Creative Director',
-      bio: 'Leading creative vision with 10+ years of experience in 3D animation and motion graphics.',
+      role: 'Lead Product Manager',
+      bio: 'Leading digital product strategy with 10+ years of experience aligning user needs with business goals.',
       avatar: img,
-      specialty: '3D Animation',
+      specialty: 'Product Roadmaps',
       experience: '10+ Years'
     },
     {
       id: 2,
       name: 'YEAHYEA ABDULLAH',
-      role: '3D Artist',
-      bio: 'Expert in photorealistic rendering and complex 3D modeling with a passion for detail.',
+      role: 'UX/UI Systems Designer',
+      bio: 'Expert in modular user interfaces, interactive states, and pixel-perfect design system engineering.',
       avatar: 'https://i.pinimg.com/736x/fb/3b/06/fb3b06e4729ccf1940543485e0f57919.jpg',
-      specialty: '3D Modeling',
+      specialty: 'Design Systems',
       experience: '8+ Years'
     },
     {
       id: 3,
       name: 'MD. MEHRAB',
-      role: 'Motion Designer',
-      bio: 'Specializing in dynamic motion graphics and seamless animations.',
+      role: 'Senior Frontend Developer',
+      bio: 'Specializing in high-performance web engineering, fluid Framer Motion transitions, and clean codebases.',
       avatar: 'https://images.unsplash.com/photo-1664730904126-0c0a1c747ee0?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmFuZ2xhZGVzaGklMjBib3l8ZW58MHx8MHx8fDA%3D',
-      specialty: 'Motion Graphics',
+      specialty: 'React & Next.js',
       experience: '7+ Years'
     },
     {
       id: 4,
       name: 'TORIKU ISLAM',
-      role: 'VFX Supervisor',
-      bio: 'Creating stunning visual effects and bringing impossible visions to life.',
+      role: 'Chief Solutions Architect',
+      bio: 'Building highly secure backend systems, cloud microservices, and custom automation pipelines.',
       avatar: 'https://p3.hippopx.com/preview/950/539/stylish-handsome-cute-romantic-bangladeshi-bangladeshi-boy-cute-smart-boy-images-boy-attitude-stock-wallpapers-romantic-boy-pic-smart-boy-wallpaper-download-thumbnail.jpg',
-      specialty: 'VFX',
+      specialty: 'API & Microservices',
       experience: '12+ Years'
     }
   ];
 
- const caseStudies = [
-  {
-    id: 1,
-    title: 'Systema Toothbrush Launch TVC',
-    category: '3D Product Animation',
-    description: 'High-precision 3D TVC visualizing advanced dental cleaning technology.',
-    video: vdo1,
-    logo: logo1,
-    client: 'Lions Bangladesh',
-    year: '2024',
-    duration: '1.5 months',
-    challenge: 'Lions Bangladesh needed a visually scientific yet premium commercial to prove Systema’s “9x more cleaning power” claim while maintaining broadcast-level polish under a tight deadline.',
-    solution: 'We created a macro-level 3D visualization system that accurately demonstrates how tapered bristles interact with teeth and gum lines using cinematic lighting and medical-grade realism.',
-    process: 'High-fidelity teeth and gum models were built in Blender, followed by precision bristle simulations to demonstrate cleaning mechanics. Shaders were tuned to reflect enamel gloss and bristle translucency. Final animation was composited and polished for nationwide TV broadcast.',
-    results: 'Delivered a technically accurate and visually premium TVC that successfully communicated the product’s scientific benefits and aligned with the brand’s healthcare positioning.',
-    images: [
-      png1,
-      png2,
-      png3,
-      png4
-    ],
-    technologies: ['Blender', 'Compositing'],
-    testimonial: {
-      text: 'The visuals perfectly communicated our technology and brand promise. The result was beyond expectations.',
-      author: 'Brand Team',
-      position: 'Lions Bangladesh'
-    }
-  },
+  const caseStudies = [
+    {
+      id: 1,
+      title: 'Orbit SaaS Analytics Platform',
+      category: 'Product Strategy & Next.js Build',
+      description: 'Strategic feature prioritization, modular design systems, and frontend Next.js platform build.',
+      video: vdo1,
+      logo: logo1,
+      client: 'Orbit Analytics',
+      year: '2024',
+      duration: '1.5 months',
+      challenge: 'Orbit required a comprehensive product roadmap, highly-polished user dashboard, and performant serverless architecture to support their public beta launch under a high-stress timeline.',
+      solution: 'We mapped the feature set into prioritized sprints, established a theme-able UX design system in Figma, and built a blazing fast responsive dashboard using React and Tailwind CSS.',
+      process: 'We structured the application wireframes and user flows to eliminate UX friction, engineered reusable modular components with optimal lazy-loading, and conducted thorough audit scans to ensure robust web vitals.',
+      results: 'Delivered a state-of-the-art interactive SaaS dashboard on-schedule, helping secure over 5,000 beta signups in the first week of deployment.',
+      images: [
+        png1,
+        png2,
+        png3,
+        png4
+      ],
+      technologies: ['Next.js', 'React', 'Tailwind CSS', 'Framer Motion'],
+      testimonial: {
+        text: 'Crafti engineered a seamless data platform that helped us secure our Series A. Their engineering standards are world-class.',
+        author: 'Director of Product',
+        position: 'Orbit Analytics'
+      }
+    },
 
-  {
-    id: 2,
-    title: 'City Bank AmEx Platinum Reserve TVC',
-    category: '3D Motion Graphics',
-    description: 'Luxury-focused 3D commercial for premium financial branding.',
-    video: vdo2,
-    logo: logo2,
-    client: 'City Bank',
-    year: '2024',
-    duration: '2 months',
-    challenge: 'City Bank needed a premium, cinematic visual style to position the AmEx Platinum Reserve card as a symbol of exclusivity and luxury.',
-    solution: 'We created a high-contrast, cinematic 3D motion system that emphasized metallic finishes, lighting drama, and elegant motion design to convey status and prestige.',
-    process: 'The card was modeled in 3D, materials were developed to reflect metallic and matte surfaces, and lighting was designed to create a luxury mood. Motion graphics, camera animation, and compositing finalized the TVC.',
-    results: 'The campaign achieved strong brand recall and positioned the Platinum Reserve card as a premium lifestyle product.',
-    images: [
-      png8,
-      png6,
-      png7,
-      png5
-    ],
-    technologies: ['Blender', 'After Effects', 'Compositing'],
-    testimonial: {
-      text: 'The commercial captured the premium essence of our brand beautifully.',
-      author: 'Marketing Team',
-      position: 'City Bank'
-    }
-  },
+    {
+      id: 2,
+      title: 'NovaPay Fintech Infrastructure',
+      category: 'Fintech API & Backend Engineering',
+      description: 'High-security API payment gateways, JWT token auth pipelines, and responsive portal.',
+      video: vdo2,
+      logo: logo2,
+      client: 'NovaPay Inc.',
+      year: '2024',
+      duration: '2 months',
+      challenge: 'NovaPay needed a custom backend API middleware system and transaction dashboard that could handle real-time syncs securely and efficiently.',
+      solution: 'We built a secure payment middleware layer using Node.js and Express, coupled with a fast, modern transaction interface utilizing real-time WebSockets.',
+      process: 'We designed the API schema to prevent latency, implemented custom JWT and MFA authentication security protocols, and established thorough automated testing scripts.',
+      results: 'Reduced payment transactional synchronization lag by 65% while providing a seamless user interface for merchants.',
+      images: [
+        png8,
+        png6,
+        png7,
+        png5
+      ],
+      technologies: ['Node.js', 'Express', 'WebSockets', 'React', 'Jest'],
+      testimonial: {
+        text: 'Integrating NovaPay’s middleware reduced our checkout latency by 65%. Their security auditing is top-tier.',
+        author: 'VP of Engineering',
+        position: 'NovaPay Inc.'
+      }
+    },
 
-  {
-    id: 3,
-    title: 'Walton Water Purifier – Pure Innovation',
-    category: '3D Product Animation',
-    description: 'Cinematic fluid-driven visualization of water purification technology.',
-    video: vdo3,
-    logo: logo3,
-    client: 'Walton Home Appliance',
-    year: '2024',
-    duration: '3 months',
-    challenge: 'Walton needed a premium way to visualize internal filtration technology while maintaining a dark, cinematic brand mood.',
-    solution: 'We used Houdini fluid simulations combined with Blender rendering to show internal filtration in a dramatic, x-ray style.',
-    process: 'Water simulations were generated in Houdini, internal filters were modeled in Blender, and lighting was optimized for a dark premium look. Cycles rendering and compositing finalized the visuals.',
-    results: 'Delivered a cinematic TVC that elevated product trust and showcased technical innovation clearly.',
-    images: [
-      png9,
-      png10,
-      png11,
-      png12
-    ],
-    technologies: ['Blender', 'Houdini', 'Compositing'],
-    testimonial: {
-      text: 'The internal visualization made our technology easy to understand and visually premium.',
-      author: 'Product Team',
-      position: 'Walton'
-    }
-  },
+    {
+      id: 3,
+      title: 'Flux AI Automation Engine',
+      category: 'AI Orchestration & Workflows',
+      description: 'Intelligent automation systems, prompt routers, and node-based workspace canvas.',
+      video: vdo3,
+      logo: logo3,
+      client: 'Flux AI',
+      year: '2024',
+      duration: '3 months',
+      challenge: 'Flux required an intuitive node-based user workspace that allows companies to define and run custom automated AI agent workflows.',
+      solution: 'We built an intelligent LLM routing system and a high-fidelity visual workspace canvas using custom React Flow systems.',
+      process: 'We engineered prompt template handlers, structured automated vector store searches, and integrated popular LLM APIs behind a resilient gateway.',
+      results: 'Boosted customer workflow automation productivity by 80% and reduced administrative overhead.',
+      images: [
+        png9,
+        png10,
+        png11,
+        png12
+      ],
+      technologies: ['React', 'React Flow', 'OpenAI API', 'Vector DB', 'Node.js'],
+      testimonial: {
+        text: 'Flux revolutionized our workflow automations. Crafti’s vector search and node-based UI increased client productivity by 80%.',
+        author: 'Chief Architect',
+        position: 'Flux AI'
+      }
+    },
 
-  {
-    id: 4,
-    title: 'Sprint Sneaker Mania',
-    category: '3D Product Animation',
-    description: 'High-energy sneaker showcase with cinematic motion and transitions.',
-    video: vdo4,
-    logo: logo4,
-    client: 'Sprint',
-    year: '2024',
-    duration: '2 months',
-    challenge: 'Sprint required a visually dynamic sneaker campaign using scanned assets without losing realism.',
-    solution: 'We optimized real-world scans and designed fluid camera motion and transitions for a clean, cinematic presentation.',
-    process: 'Scans were cleaned and retopologized in Blender, materials refined, animations choreographed, and final compositing polished.',
-    results: 'Created a visually powerful sneaker campaign with smooth transitions and premium realism.',
-    images: [
-      png13,
-      png14,
-      png15,
-      png16
-    ],
-    technologies: ['Blender', '3D Scanning', 'Compositing'],
-    testimonial: {
-      text: 'The transitions and motion made our sneakers feel alive and premium.',
-      author: 'Creative Team',
-      position: 'Sprint'
+    {
+      id: 4,
+      title: 'CoreOS Product Management System',
+      category: 'UX Systems & Dashboard Engineering',
+      description: 'Accessible, theme-able Tailwind component libraries with Storybook documentation.',
+      video: vdo4,
+      logo: logo4,
+      client: 'CoreOS Group',
+      year: '2024',
+      duration: '2 months',
+      challenge: 'CoreOS needed a unified design system framework to standardize UI/UX consistency across their multiple product lines.',
+      solution: 'We engineered a highly customizable, fully responsive, and accessible UI component framework built in Tailwind CSS.',
+      process: 'Designed and coded over 45 foundational UI components, documented them using Storybook, and optimized bundle sizing for fast loads.',
+      results: 'Successfully adopted by 12 internal engineering teams, cutting product design-to-release cycles in half.',
+      images: [
+        png13,
+        png14,
+        png15,
+        png16
+      ],
+      technologies: ['Tailwind CSS', 'Storybook', 'Vite', 'React', 'Framer Motion'],
+      testimonial: {
+        text: 'CoreOS standardized our entire interface design language. Engineering speed has doubled across our active product squads.',
+        author: 'Head of Design',
+        position: 'CoreOS Group'
+      }
     }
-  }
-];
+  ];
 
 
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden font-KronaOne">
-      
+
       {/* Hero Section */}
-    <HeroSectionStudio></HeroSectionStudio>
-    <HowHelp></HowHelp>
-  
+      <HeroSectionStudio></HeroSectionStudio>
+      <HowHelp></HowHelp>
+
 
       {/* Team Members Section */}
       <section className="py-20 px-6 md:px-8">
@@ -213,10 +213,10 @@ const OurStudio = () => {
             className="mb-16"
           >
             <h2 className="text-4xl md:text-7xl font-bold mb-20 text-center tracking-tighter">
-              Team <span className="text-red-600">MEMBER'S</span>
+              Team <span className="text-red-600">MEMBER\'S</span>
             </h2>
             <p className="text-gray-300 text-2xl w-full mx-auto text-center tracking-tighter">
-              7007 Studio is a focused, founder-led creative studio, collaborating with a small network of trusted artists and specialists when needed.
+              Crafti is a focused, founder-led product and software studio, collaborating with a small network of trusted architects and specialists when needed.
             </p>
           </motion.div>
 
@@ -241,7 +241,7 @@ const OurStudio = () => {
               Case <span className="text-red-600">Studies</span>
             </h2>
             <p className="text-gray-300 text-lg text-center w-full mx-auto tracking-tighter">
-             <span className='text-5xl text-red-600'>We begin </span> by understanding the project from the <span className='text-red-600'>client’s perspective</span>. From there, we translate that vision into a functional solution — breaking complex ideas down into clear, manageable parts and building them with intention and precision.
+              <span className='text-5xl text-red-600'>We begin </span> by understanding the project from the <span className='text-red-600'>client’s perspective</span>. From there, we translate that vision into a functional solution — breaking complex ideas down into clear, manageable parts and building them with intention and precision.
             </p>
           </motion.div>
 
@@ -268,10 +268,10 @@ const OurStudio = () => {
         )}
       </AnimatePresence>
 
-<div className="">
-  <Pipeline></Pipeline>
-  <FAQ></FAQ>
-</div>
+      <div className="">
+        <Pipeline />
+        <FAQ />
+      </div>
 
     </div>
   );
@@ -302,7 +302,7 @@ const TeamCard = ({ member, index }) => {
       <div className="relative z-10 h-full flex flex-col md:flex-row items-center 
                       p-6 sm:p-8 md:p-10 
                       min-h-[220px] sm:min-h-[240px] md:min-h-[260px]">
-        
+
         {/* Left Side - Content */}
         <div className="flex-1 md:pr-8 text-center md:text-left">
           <span className="inline-block mb-4 md:mb-5 
@@ -399,7 +399,7 @@ const CaseStudyCard = ({ project, index, onClick }) => {
       <div className="relative z-10 h-full flex flex-col justify-between 
                       p-6 sm:p-8 md:p-10 
                       min-h-[260px] sm:min-h-[320px] md:min-h-[340px]">
-        
+
         {/* Top */}
         <div>
           <span className="inline-block mb-4 md:mb-5 
@@ -421,7 +421,7 @@ const CaseStudyCard = ({ project, index, onClick }) => {
         <div className="flex items-center justify-between 
                         pt-6 sm:pt-8 md:pt-12 
                         border-t border-white/20">
-          
+
           <span className="text-[10px] sm:text-xs md:text-sm 
                            tracking-[0.25em] md:tracking-[0.4em] 
                            text-gray-300 uppercase 

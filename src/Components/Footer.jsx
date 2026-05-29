@@ -24,7 +24,7 @@ const Footer = () => {
   -mb-[0.12em]
   text-red-600
 ">
-              7007
+              CRAFTI
             </h1>
 
             <h2 className="
@@ -56,8 +56,7 @@ const Footer = () => {
                 About Us
               </h3>
               <p className="text-white text-sm  leading-relaxed">
-                7007 Studio is a creative design & digital production studio focused on
-                premium visuals, branding, and motion experiences.
+                Crafti is a premium Product Innovation Studio and Web Development Partner. We help startups and businesses build scalable digital experiences.
               </p>
             </div>
 
@@ -67,10 +66,10 @@ const Footer = () => {
                 Services
               </h3>
               <ul className="space-y-2 text-white text-sm ">
-                <li className="hover:text-red-600 transition-colors cursor-pointer">3D Animation</li>
-                <li className="hover:text-red-600 transition-colors cursor-pointer">Motion Graphics</li>
-                <li className="hover:text-red-600 transition-colors cursor-pointer">Brand Identity</li>
-                <li className="hover:text-red-600 transition-colors cursor-pointer">Visual Effects</li>
+                <li className="hover:text-red-600 transition-colors cursor-pointer">Product Ownership</li>
+                <li className="hover:text-red-600 transition-colors cursor-pointer">Web Development</li>
+                <li className="hover:text-red-600 transition-colors cursor-pointer">UX/UI Design Systems</li>
+                <li className="hover:text-red-600 transition-colors cursor-pointer">AI Product Systems</li>
               </ul>
             </div>
 
@@ -82,11 +81,11 @@ const Footer = () => {
 
               <div className="space-y-2">
                 <a
-                  href="mailto:hello@7007studio.com"
+                  href="mailto:hello@craftistudio.com"
                   className="flex items-center justify-center sm:justify-start gap-2 text-white text-sm  hover:text-red-600 transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  <span>hello@7007studio.com</span>
+                  <span>hello@craftistudio.com</span>
                 </a>
 
                 <a
@@ -128,10 +127,10 @@ const Footer = () => {
       <div className="border-t border-gray-800 py-4 md:py-6 px-6 md:px-12 lg:px-20">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white text-xs md:text-sm text-center sm:text-left">
-            © 2026 — All rights reserved by <a href="/" className="text-red-600 hover:text-red-500 transition-colors">7007 Studio</a>
+            © 2026 — All rights reserved by <a href="/" className="text-red-600 hover:text-red-500 transition-colors">Crafti Studio</a>
           </p>
           <p className="text-gray-500 text-xs md:text-sm text-center sm:text-right">
-            Developed by <a href="https://www.linkedin.com/company/techofsolution/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-red-500 transition-colors">Techof Solution Ltd.</a>
+            Designed & Engineered by <span className="text-red-600">Crafti Studio</span>
           </p>
         </div>
       </div>

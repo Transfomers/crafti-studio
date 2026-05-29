@@ -5,11 +5,11 @@ import video1 from '../../assets/video/vid1.mp4';
 
 const Philosophy = () => {
   const philosophyLines = [
-    { text: "Achievement is not the end — it's the breaking point.", color: "red" },
-    { text: "Beyond every completed goal lies a new vision waiting to be built. That's where we begin again.", color: "white" },
-    { text: "We believe powerful visuals are crafted through structure, clarity, and discipline.", color: "red" },
-    { text: "Each frame tells a story — not just how it looks, but why it exists.", color: "red" },
-    { text: "We dream. We build. We evolve.", color: "white" }
+    { text: "Product thinking beyond development.", color: "red" },
+    { text: "We help define clear product roadmaps and agile systems.", color: "white" },
+    { text: "Structure user experiences, prioritize features, and optimize workflows.", color: "red" },
+    { text: "Build with modern scalable architectures to ensure sustainable growth.", color: "white" },
+    { text: "We don't just write code — we engineer digital growth.", color: "red" }
   ];
 
   return (
@@ -23,16 +23,16 @@ const Philosophy = () => {
             {/* Title */}
             <motion.div
               className="relative inline-block overflow-hidden cursor-pointer mb-12 md:mb-24"
-              initial={{ 
+              initial={{
                 scale: 0,
                 rotateX: -90,
                 transformOrigin: "top center"
               }}
-              whileInView={{ 
+              whileInView={{
                 scale: 1,
                 rotateX: 0
               }}
-              transition={{ 
+              transition={{
                 duration: 0.8,
                 ease: [0.6, 0.01, 0.05, 0.95]
               }}
@@ -40,9 +40,9 @@ const Philosophy = () => {
               style={{ perspective: "1000px" }}
             >
               <h2 className="text-4xl  md:text-6xl font-bold text-red-600 tracking-tighter relative  tracking-wide">
-                PHILOSOPHY
+                PRODUCT THINKING
               </h2>
-              
+
             </motion.div>
 
             {/* Philosophy Lines with 3D Scale Effect */}
@@ -50,18 +50,18 @@ const Philosophy = () => {
               {philosophyLines.map((line, index) => (
                 <motion.li
                   key={index}
-                  initial={{ 
+                  initial={{
                     scale: 0,
                     scaleY: 0.2,
                     transformOrigin: "top center",
                     opacity: 0
                   }}
-                  whileInView={{ 
+                  whileInView={{
                     scale: 1,
                     scaleY: 1,
                     opacity: 1
                   }}
-                  transition={{ 
+                  transition={{
                     duration: 0.7,
                     delay: index * 0.1,
                     ease: [0.6, 0.01, 0.05, 0.95]

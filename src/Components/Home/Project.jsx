@@ -14,29 +14,29 @@ import loog4 from '../../assets/Image/Sprint-logo.png'
 const projects = [
     {
         id: 1,
-        title: "Product Visualization",
-        category: "3D Animation",
+        title: "Orbit SaaS Analytics",
+        category: "SaaS Platform",
         video: video1,
         logo: loog1
     },
     {
         id: 2,
-        title: "Cinematic VFX Shot",
-        category: "VFX",
+        title: "NovaPay Infrastructure",
+        category: "Fintech Infrastructure",
         video: video2,
         logo: loog2
     },
     {
         id: 3,
-        title: "Game Environment",
-        category: "Game Art",
+        title: "Flux AI Workflow Platform",
+        category: "AI Workflows",
         video: video3,
         logo: loog3
     },
     {
         id: 4,
-        title: "Brand Motion Film",
-        category: "Motion Design",
+        title: "CoreOS Management System",
+        category: "UX Systems",
         video: video4,
         logo: loog4
     }
@@ -44,17 +44,17 @@ const projects = [
 
 const Project = () => {
     return (
-        <div className="min-h-screen bg-black text-white">
+        <div className="min-h-screen bg-black text-white font-urbanist">
 
             {/* Section Title */}
             <div className="text-center mb-16 sm:mb-20 md:mb-24 px-6">
-                <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold font-KronaOne text-red-600">
-                    OUR HANDPICK PROJECT
+                <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-urbanist tracking-tight text-white uppercase">
+                    Crafted <span className="text-[#ff2a35] drop-shadow-[0_0_15px_rgba(255,42,53,0.3)]">Platforms</span>
                 </h2>
             </div>
 
             {/* Project Grid Wrapper */}
-            <div className="px-4 sm:px-10 md:px-20 lg:px-52 font-KronaOne">
+            <div className="px-4 sm:px-10 md:px-20 lg:px-52 font-urbanist">
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 md:gap-20">
                     {projects.map((item, index) => (
                         <motion.div
@@ -63,7 +63,7 @@ const Project = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.7, delay: index * 0.1 }}
-                            className="relative overflow-hidden border border-red-500/30 bg-black rounded-xl sm:rounded-2xl"
+                            className="relative overflow-hidden border border-red-500/15 hover:border-red-500/35 transition-all duration-300 bg-black rounded-xl sm:rounded-2xl"
                         >
                             {/* Background Video */}
                             <video
@@ -79,15 +79,13 @@ const Project = () => {
                             <div className="absolute inset-0 bg-black/65" />
 
                             {/* Card Content */}
-                            <div className="relative z-10 p-6  h-full flex flex-col justify-between">
+                            <div className="relative z-10 p-6 h-full flex flex-col justify-between">
 
                                 {/* Top */}
                                 <div>
-                                    <span className="inline-block mb-3 sm:mb-4 bg-gradient-to-r from-red-600 to-red-700 px-3 sm:px-4 py-1 text-xs sm:text-sm font-bold tracking-[0.3em] sm:tracking-[0.35em] uppercase">
+                                    <span className="inline-block mb-3 sm:mb-4 bg-[#ff2a35] px-3 sm:px-4 py-1 text-[10px] sm:text-xs font-bold tracking-[0.25em] uppercase text-white rounded-[2px]">
                                         {item.category}
                                     </span>
-
-
                                 </div>
 
                                 {/* Bottom */}

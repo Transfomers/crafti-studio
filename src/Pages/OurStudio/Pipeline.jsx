@@ -10,52 +10,38 @@ const Pipeline = () => {
     const pipelineSteps = [
         {
             id: 1,
-            phase: 'Discovery',
-            title: 'Concept & Planning',
-            description: 'Understanding client vision, project requirements, and creating initial concepts that set the foundation.',
-            duration: '1-2 Weeks'
+            phase: 'Discover',
+            title: 'Strategy & Vision Mapping',
+            description: 'Understanding target users, core business goals, and long-term product vision. We prioritize features and shape the product blueprint before a single line of code is written.',
+            duration: '1-2 WEEKS'
         },
         {
             id: 2,
-            phase: 'Pre-Production',
-            title: 'Storyboarding',
-            description: 'Detailed planning of scenes, camera angles, and visual flow for the production process.',
-            duration: '2-3 Weeks'
+            phase: 'Structure',
+            title: 'UX & System Architecture',
+            description: 'Engineering comprehensive user flows, interactive wireframes, unified Figma design systems, and resilient database schemas to ensure absolute scalability.',
+            duration: '2-3 WEEKS'
         },
         {
             id: 3,
-            phase: 'Modeling',
-            title: '3D Modeling',
-            description: 'Creating all 3D assets, characters, and environments where ideas transform into digital reality.',
-            duration: '3-4 Weeks'
+            phase: 'Build',
+            title: 'High-Performance Sprints',
+            description: 'Converting structured roadmaps into blazing fast React or Next.js frontends, custom API middleware integrations, and clean, modular architectures.',
+            duration: '3-5 WEEKS'
         },
         {
             id: 4,
-            phase: 'Texturing',
-            title: 'Materials & Texturing',
-            description: 'Adding colors, materials, and surface details to bring models to life with realistic appearances.',
-            duration: '2-3 Weeks'
+            phase: 'Optimize',
+            title: 'Audits & Refinement',
+            description: 'Conducting thorough security testing, system performance audits, interface polish, and active user-flow optimization to guarantee perfect web vitals.',
+            duration: '2-3 WEEKS'
         },
         {
             id: 5,
-            phase: 'Animation',
-            title: 'Animation & Motion',
-            description: 'Bringing characters and objects to life through movement and believable motion.',
-            duration: '4-6 Weeks'
-        },
-        {
-            id: 6,
-            phase: 'Rendering',
-            title: 'Rendering',
-            description: 'Converting 3D scenes into final images using render engines and optimization techniques.',
-            duration: '2-3 Weeks'
-        },
-        {
-            id: 7,
-            phase: 'Post-Production',
-            title: 'Final Delivery',
-            description: 'Color correction, compositing, and final touches for delivery-ready content.',
-            duration: '2-3 Weeks'
+            phase: 'Scale',
+            title: 'Growth Systems',
+            description: 'Continuous deployment pipelines, cloud scaling optimization, AI workflow integrations, and long-term product evolution engineered for growth.',
+            duration: 'CONTINUOUS'
         }
     ];
 
@@ -147,24 +133,29 @@ const Pipeline = () => {
     }, []);
 
     return (
-        <div className="min-h-screen bg-black  text-white py-20 px-8 md:px-8 font-">
+        <section className="bg-black text-white py-24 px-4 sm:px-6 md:px-8 font-urbanist relative overflow-hidden">
+            {/* Background Glow */}
+            <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-600/5 rounded-full blur-[130px] pointer-events-none" />
+
             {/* Header */}
             <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="max-w-7xl mx-auto mb-20"
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="max-w-7xl mx-auto mb-20 text-center relative z-10"
             >
-                <h1 className="text-5xl md:text-7xl font-bold mb-6 text-center tracking-tighter">
-                    Our <span className="text-red-500">Pipeline</span>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6">
+                    Our <span className="text-[#ff2a35] drop-shadow-[0_0_15px_rgba(255,42,53,0.3)]">Pipeline</span>
                 </h1>
-                <p className="text-gray-400 text-lg text-center tracking-tighter">
-                    A streamlined 7-step journey through our 3D production process. 
-                    From concept to final delivery, every phase brings your vision closer to reality.
+                <p className="text-zinc-400 text-sm sm:text-base md:text-lg max-w-3xl mx-auto font-dmsans leading-relaxed">
+                    A streamlined 5-step journey through our product innovation process. 
+                    From strategic discovery to long-term scaling systems, every phase brings your digital platform closer to reality.
                 </p>
             </motion.div>
 
             {/* Snake Pipeline */}
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-5xl mx-auto relative z-10">
                 {pipelineSteps.map((step, index) => {
                     const isEven = index % 2 === 0;
                     const isLast = index === pipelineSteps.length - 1;
@@ -172,7 +163,7 @@ const Pipeline = () => {
                     return (
                         <div key={step.id}>
                             {/* Step Row */}
-                            <div className={`flex  items-center gap-8 ${isEven ? 'flex-row' : 'flex-row-reverse'} `}>
+                            <div className={`flex items-center gap-6 md:gap-10 ${isEven ? 'flex-row' : 'flex-row-reverse'}`}>
                                 {/* Step Card */}
                                 <motion.div
                                     ref={el => cardRefs.current[index] = el}
@@ -180,48 +171,51 @@ const Pipeline = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                                    className="flex-1 border border-red-500/30 bg-zinc-900 relative overflow-hidden group"
+                                    className="flex-1 bg-[#0b0b0d] border border-red-500/15 hover:border-red-500/30 hover:shadow-[0_0_30px_rgba(255,42,53,0.03)] transition-all duration-500 rounded-[4px] relative overflow-hidden group"
                                 >
-                                    {/* Background Gradient */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-red-600/0 to-red-600/0 group-hover:from-red-600/10 group-hover:to-red-600/5 transition-all duration-500" />
+                                    {/* Subtle inner hover glow */}
+                                    <div className="absolute inset-0 bg-red-500/[0.005] group-hover:bg-red-500/[0.015] transition-all duration-500 pointer-events-none" />
                                     
-                                    <div className="relative z-10 p-8">
-                                        {/* Step Number & Badge */}
+                                    <div className="relative z-10 p-6 sm:p-8">
+                                        {/* Step Number & Badge exactly matching the visual style in the image */}
                                         <div className="flex items-center gap-4 mb-6">
-                                            <div className="w-16 h-16 rounded-full border-4 border-red-500 bg-red-500/20 flex items-center justify-center">
-                                                <span className="text-2xl font-bold">{step.id}</span>
+                                            <div className="w-11 h-11 rounded-full border-[3px] border-[#ff2a35] bg-transparent flex items-center justify-center">
+                                                <span className="text-base font-bold text-white">{step.id}</span>
                                             </div>
                                             
-                                            <span className="bg-gradient-to-r from-red-600 to-red-700 px-4 py-1 text-xs font-bold tracking-[0.35em] uppercase">
+                                            <span className="bg-[#ff2a35] px-4 py-1 text-[10px] sm:text-xs font-bold tracking-[0.25em] uppercase text-white rounded-[2px]">
                                                 {step.phase}
                                             </span>
                                         </div>
 
                                         {/* Title */}
-                                        <h3 className="text-2xl md:text-3xl font-bold mb-4 leading-tight">
+                                        <h3 className="text-2xl sm:text-3xl font-bold mb-4 leading-tight text-white group-hover:text-[#ff2a35] transition-colors duration-300">
                                             {step.title}
                                         </h3>
 
                                         {/* Description */}
-                                        <p className="text-gray-400 mb-6 leading-relaxed text-sm">
+                                        <p className="text-zinc-300 font-dmsans text-sm sm:text-base leading-relaxed mb-5">
                                             {step.description}
                                         </p>
 
-                                        {/* Duration */}
-                                        <div className="flex items-center gap-2 pt-4 border-t border-zinc-800">
-                                            <span className="text-gray-500 text-xs uppercase tracking-wider">Duration:</span>
-                                            <span className="text-white text-sm font-bold">{step.duration}</span>
+                                        {/* Horizontal Divider Line */}
+                                        <div className="border-t border-zinc-800/60 my-4" />
+
+                                        {/* Duration exactly like the screenshot */}
+                                        <div className="flex items-center gap-2 text-xs sm:text-sm font-dmsans uppercase text-zinc-500">
+                                            <span>DURATION:</span>
+                                            <span className="text-white font-bold">{step.duration}</span>
                                         </div>
                                     </div>
 
-                                    {/* Corner Accents */}
-                                    <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-red-500/60" />
-                                    <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-red-500/60" />
+                                    {/* Pixel Perfect Corner Accents */}
+                                    <div className="absolute top-0 right-0 w-4 h-4 border-t-[2px] border-r-[2px] border-[#ff2a35] pointer-events-none" />
+                                    <div className="absolute bottom-0 left-0 w-4 h-4 border-b-[2px] border-l-[2px] border-[#ff2a35] pointer-events-none" />
                                 </motion.div>
 
-                                {/* Horizontal Line */}
+                                {/* Horizontal Line Divider (Desktop Only) */}
                                 {!isLast && (
-                                    <div className="hidden md:block flex-shrink-0 w-24 h-1 bg-red-500/30" />
+                                    <div className="hidden md:block flex-shrink-0 w-16 lg:w-24 h-[1px] bg-red-500/20" />
                                 )}
                             </div>
 
@@ -229,23 +223,23 @@ const Pipeline = () => {
                             {!isLast && (
                                 <div 
                                     ref={el => connectorRefs.current[index] = el}
-                                    className={`flex ${isEven ? 'justify-end' : 'justify-start'} mb-5 relative`}
+                                    className={`flex ${isEven ? 'justify-end' : 'justify-start'} my-6 relative`}
                                 >
                                     {/* Running Arrow - positioned absolutely to follow the path */}
                                     <div 
-                                        className=" running-arrow absolute w-6 h-6 bg-red-500 rounded-full flex items-center justify-center z-20"
+                                        className="running-arrow absolute w-8 h-8 bg-[#ff2a35] shadow-[0_0_15px_rgba(255,42,53,0.5)] rounded-full flex items-center justify-center z-20"
                                         style={{ 
                                             left: isEven ? 0 : 'auto',
                                             right: isEven ? 'auto' : 0,
                                             top: 0
                                         }}
                                     >
-                                        <ArrowRight className="w-3 h-3 text-white" />
+                                        <ArrowRight className="w-4 h-4 text-white animate-pulse" />
                                     </div>
                                     
                                     <div className="flex flex-col items-center gap-2">
                                         {/* Horizontal Line (invisible but used for measurement) */}
-                                        <div className="horizontal-line w-24 md:w-96 h-1 bg-transparent absolute top-0" 
+                                        <div className="horizontal-line w-16 md:w-[220px] lg:w-[350px] h-[1px] bg-transparent absolute top-0" 
                                              style={{ 
                                                  left: isEven ? 0 : 'auto',
                                                  right: isEven ? 'auto' : 0
@@ -253,11 +247,11 @@ const Pipeline = () => {
                                         />
                                         
                                         {/* Vertical Line */}
-                                        <div className="vertical-line w-1 h-20 bg-red-500/30" />
+                                        <div className="vertical-line w-[1px] h-20 bg-red-500/20" />
                                         
-                                        {/* Static Arrow at bottom */}
-                                        <div className="w-10 h-10 rounded-full bg-red-500 flex items-center justify-center">
-                                            <ArrowDown className="w-5 h-5 text-white" />
+                                        {/* Static Arrow at bottom exactly matching the visual style in the image */}
+                                        <div className="w-8 h-8 rounded-full bg-[#ff2a35] shadow-[0_0_10px_rgba(255,42,53,0.3)] flex items-center justify-center">
+                                            <ArrowDown className="w-4 h-4 text-white" />
                                         </div>
                                     </div>
                                 </div>
@@ -266,7 +260,7 @@ const Pipeline = () => {
                     );
                 })}
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -16,152 +16,73 @@ const Package = () => {
     {
       id: 1,
       type: 'gig',
-      title: '3D Product Modeling',
-      category: 'Gig-Based Service',
-      description: 'E-commerce / Ads / Branding',
-      priceRange: '$120 - $350',
+      title: 'UX/UI Audit & Design System',
+      category: 'Strategic UX',
+      description: 'Design Systems / Audits / Flows',
+      priceRange: '$500 - $1,500',
       video: vdo1,
       rating: 4.9,
       reviews: 132,
       fullDescription:
-        'Professional 3D product models created for advertising, branding and e-commerce. Clean topology, real-world scale and production-ready assets.',
+        'A comprehensive design audit and custom-tailored modular design system using modern Figma standards, ready for immediate frontend conversion.',
       packages: [
-        { name: 'Basic', price: 120, delivery: '2 days', revisions: 1, features: ['1 simple product', 'Clean geometry', 'Real-world scale', 'No textures'] },
-        { name: 'Standard', price: 220, delivery: '3–4 days', revisions: 2, features: ['1 detailed product', 'Clean topology', 'UV unwrapped', 'Basic materials'] },
-        { name: 'Premium', price: 350, delivery: '5 days', revisions: 3, features: ['Complex product', 'High + Low poly', 'Production-ready topology', 'Full material setup'] }
+        { name: 'Basic', price: 500, delivery: '3 days', revisions: 1, features: ['UX audit of 3 key pages', 'Basic UI component kit', 'Color & font scale definitions', 'Figma file delivery'] },
+        { name: 'Standard', price: 950, delivery: '5 days', revisions: 2, features: ['UX audit of 8 key pages', 'Comprehensive UI design system', 'Responsive layouts', 'Interactive states spec'] },
+        { name: 'Premium', price: 1500, delivery: '8 days', revisions: 3, features: ['Complete product flows (up to 15 pages)', 'Full responsive design system', 'Animation specs', 'Figma and Storybook-ready code specs'] }
       ]
     },
-
     {
       id: 2,
       type: 'gig',
-      title: 'Photorealistic 3D Rendering',
-      category: 'Gig-Based Service',
-      description: 'Marketing / Ads / Website Visuals',
-      priceRange: '$150 - $450',
+      title: 'SaaS Frontend Development',
+      category: 'Engineering',
+      description: 'React / Next.js / Tailwind CSS',
+      priceRange: '$800 - $2,500',
       video: vdo1,
-      rating: 4.8,
-      reviews: 101,
+      rating: 4.9,
+      reviews: 114,
       fullDescription:
-        'High-end cinematic product renders with studio and advanced lighting setups for websites, marketing and ads.',
+        'Sleek, responsive, and pixel-perfect React or Next.js frontend screens based on your design system. Optimized for maximum performance.',
       packages: [
-        { name: 'Basic', price: 150, delivery: '2 days', revisions: 1, features: ['1 product', '1 camera angle', 'HD render', 'Studio lighting'] },
-        { name: 'Standard', price: 280, delivery: '3–4 days', revisions: 2, features: ['1 product', '3 camera angles', '4K resolution', 'Advanced lighting'] },
-        { name: 'Premium', price: 450, delivery: '5 days', revisions: 3, features: ['1 product', '5+ camera angles', 'Cinematic lighting', 'High-end materials & reflections'] }
+        { name: 'Basic', price: 800, delivery: '4 days', revisions: 1, features: ['2 responsive pages', 'Clean Tailwind CSS code', 'SEO basic tags', 'Next.js setup'] },
+        { name: 'Standard', price: 1500, delivery: '7 days', revisions: 2, features: ['5 responsive pages', 'Framer Motion animations', 'Global state management', 'SEO advanced markup'] },
+        { name: 'Premium', price: 2500, delivery: '12 days', revisions: 3, features: ['Full frontend app (up to 10 pages)', 'Interactive micro-interactions', 'Storybook components', 'Ultra-high performance audit score (95+)'] }
       ]
     },
-
     {
       id: 3,
       type: 'gig',
-      title: 'Game-Ready 3D Assets',
-      category: 'Gig-Based Service',
-      description: 'Props & Environment Assets',
-      priceRange: '$180 - $600',
+      title: 'API Integration & Middleware',
+      category: 'Systems Engineering',
+      description: 'GraphQL / REST / Integrations',
+      priceRange: '$600 - $1,800',
       video: vdo1,
-      rating: 4.9,
-      reviews: 87,
+      rating: 4.8,
+      reviews: 95,
       fullDescription:
-        'Optimized game assets with PBR textures, proper LODs and engine-ready setups for Unreal and Unity.',
+        'High-performance backend API integrations, custom middleware development, and secure database connections for modern applications.',
       packages: [
-        { name: 'Basic', price: 180, delivery: '3 days', revisions: 1, features: ['Simple prop', 'Low poly', 'UV + base texture'] },
-        { name: 'Standard', price: 350, delivery: '5 days', revisions: 2, features: ['Medium asset', 'PBR textures', 'Unreal / Unity ready'] },
-        { name: 'Premium', price: 600, delivery: '7 days', revisions: 3, features: ['Complex asset', 'Optimized LODs', 'Advanced PBR workflow', 'Engine-ready setup'] }
+        { name: 'Basic', price: 600, delivery: '3 days', revisions: 1, features: ['1 external API integration', 'Clean Node.js/Express router', 'Basic error handling'] },
+        { name: 'Standard', price: 1100, delivery: '5 days', revisions: 2, features: ['3 API integrations', 'Data schema modeling', 'Secure JWT authentication', 'Unit test coverage'] },
+        { name: 'Premium', price: 1800, delivery: '9 days', revisions: 3, features: ['Complex multi-source pipeline', 'GraphQL API gateway layer', 'Real-time WebSockets integration', 'Comprehensive error logger & monitoring'] }
       ]
     },
-
     {
       id: 4,
       type: 'gig',
-      title: '3D Character Modeling',
-      category: 'Gig-Based Service',
-      description: 'Stylized / Semi-Realistic',
-      priceRange: '$300 - $900',
+      title: 'Product Roadmap & Sprint Plan',
+      category: 'Product Ownership',
+      description: 'Roadmaps / Agile / Sprint Setup',
+      priceRange: '$400 - $1,200',
       video: vdo1,
-      rating: 4.8,
-      reviews: 64,
+      rating: 5.0,
+      reviews: 84,
       fullDescription:
-        'Stylized and semi-realistic characters for games, animation and marketing with clean topology and textures.',
+        'Accelerate your product launch with structured roadmaps, backlog prioritization, and interactive agile dashboard setups.',
       packages: [
-        { name: 'Basic', price: 300, delivery: '5 days', revisions: 1, features: ['Stylized character', 'High-poly sculpt', 'Static pose'] },
-        { name: 'Standard', price: 550, delivery: '7 days', revisions: 2, features: ['Stylized / semi-realistic', 'Clean topology', 'T-pose / A-pose'] },
-        { name: 'Premium', price: 900, delivery: '10 days', revisions: 3, features: ['Detailed character', 'High + low poly', 'Texture sets included', 'Game or render ready'] }
-      ]
-    },
-
-    {
-      id: 5,
-      type: 'gig',
-      title: 'Hard-Surface / Industrial Modeling',
-      category: 'Gig-Based Service',
-      description: 'Mechanical & Industrial Assets',
-      priceRange: '$200 - $700',
-      video: vdo1,
-      rating: 4.9,
-      reviews: 59,
-      fullDescription:
-        'Precision hard-surface and mechanical modeling for industrial, product and technical assets.',
-      packages: [
-        { name: 'Basic', price: 200, delivery: '3 days', revisions: 1, features: ['Simple hard-surface asset', 'Clean shading', 'Non-destructive workflow'] },
-        { name: 'Standard', price: 400, delivery: '5 days', revisions: 2, features: ['Medium complexity asset', 'UV unwrapped', 'Materials applied'] },
-        { name: 'Premium', price: 700, delivery: '7 days', revisions: 3, features: ['Complex mechanical asset', 'Precision modeling', 'Multiple variations'] }
-      ]
-    },
-
-    {
-      id: 6,
-      type: 'gig',
-      title: 'Unreal Engine Asset Setup',
-      category: 'Gig-Based Service',
-      description: 'Scene & Lighting Setup',
-      priceRange: '$250 - $800',
-      video: vdo1,
-      rating: 4.9,
-      reviews: 41,
-      fullDescription:
-        'Professional Unreal Engine setup including materials, lighting, optimization and scene assembly.',
-      packages: [
-        { name: 'Basic', price: 250, delivery: '3 days', revisions: 1, features: ['Asset import', 'Material setup', 'Basic lighting'] },
-        { name: 'Standard', price: 500, delivery: '5 days', revisions: 2, features: ['Scene assembly', 'Optimized materials', 'Camera setup'] },
-        { name: 'Premium', price: 800, delivery: '7 days', revisions: 3, features: ['Cinematic or playable scene', 'Lighting polish', 'Performance optimization'] }
-      ]
-    },
-
-    {
-      id: 7,
-      type: 'gig',
-      title: '3D Animation',
-      category: 'Gig-Based Service',
-      description: 'Product / Simple Character',
-      priceRange: '$200 - $700',
-      video: vdo1,
-      rating: 4.8,
-      reviews: 73,
-      fullDescription:
-        'High-quality product and character animations with cinematic shots and professional lighting.',
-      packages: [
-        { name: 'Basic', price: 200, delivery: '3 days', revisions: 1, features: ['Simple animation', 'Static camera', '5–7 sec clip'] },
-        { name: 'Standard', price: 450, delivery: '5 days', revisions: 2, features: ['Animated camera', 'Lighting & render', '10–15 sec'] },
-        { name: 'Premium', price: 700, delivery: '7 days', revisions: 3, features: ['Cinematic animation', 'Multiple shots', 'High-quality render'] }
-      ]
-    },
-
-    {
-      id: 8,
-      type: 'gig',
-      title: 'Retopology, UV & Optimization',
-      category: 'Gig-Based Service',
-      description: 'Game-ready optimization',
-      priceRange: '$80 - $250',
-      video: vdo1,
-      rating: 4.9,
-      reviews: 66,
-      fullDescription:
-        'Clean quad meshes, UVs, textures and engine-ready optimization.',
-      packages: [
-        { name: 'Basic', price: 80, delivery: '1 day', revisions: 1, features: ['Retopology only', 'Clean quad mesh'] },
-        { name: 'Standard', price: 150, delivery: '2 days', revisions: 2, features: ['Retopo + UV', 'Game-ready'] },
-        { name: 'Premium', price: 250, delivery: '3 days', revisions: 3, features: ['Full optimization', 'Texture setup', 'Engine-ready asset'] }
+        { name: 'Basic', price: 400, delivery: '2 days', revisions: 1, features: ['1-month detailed roadmap', 'Backlog grooming (up to 15 items)', 'Trello or Jira dashboard setup'] },
+        { name: 'Standard', price: 750, delivery: '4 days', revisions: 2, features: ['3-month product roadmap', 'Full backlog prioritization', 'Epic and User Story structuring', 'Agile process training session'] },
+        { name: 'Premium', price: 1200, delivery: '7 days', revisions: 3, features: ['6-month product roadmap', 'Complete sprint plan with sizing estimates', 'System architecture review notes', 'Weekly agile scrum master support'] }
       ]
     },
 
@@ -169,91 +90,46 @@ const Package = () => {
     {
       id: 9,
       type: 'custom',
-      title: 'Games & Interactive Media',
+      title: 'Custom SaaS Platform Development',
       category: 'Custom Service',
-      description: 'Full Unreal game asset pipeline',
-      priceRange: 'Starting at $2,000',
+      description: 'End-to-end web products',
+      priceRange: 'Starting at $5,000',
       video: vdo1,
       rating: 5.0,
       reviews: 42,
       fullDescription:
-        'Complete asset pipelines for games with characters, props, environments and optimization.',
+        'A comprehensive product design, product ownership alignment, and full-stack development of your custom SaaS platform or dashboard.',
       customFeatures: [
-        'Full game asset pipeline',
-        'Characters, props, environments',
-        'Unreal Engine workflows',
-        'Optimization & iteration',
-        'Perfect for game studios & indie teams'
+        'Strategic roadmapping and product thinking',
+        'Stunning dark UI/UX custom design system',
+        'State-of-the-art frontend in Next.js & React',
+        'Scalable serverless API backend architecture',
+        'Interactive charts, reports, and AI helper widgets'
       ],
-      startingPrice: 2000,
-      estimatedTime: 'Varies by scope'
+      startingPrice: 5000,
+      estimatedTime: '4–8 weeks'
     },
-
     {
       id: 10,
       type: 'custom',
-      title: 'Architecture & Interior Visualization',
+      title: 'AI Workflow & Automation Integrations',
       category: 'Custom Service',
-      description: 'Cinematic walkthroughs',
-      priceRange: 'Starting at $1,800',
+      description: 'Intelligent systems & automation',
+      priceRange: 'Starting at $4,000',
       video: vdo1,
       rating: 4.9,
       reviews: 56,
       fullDescription:
-        'Photoreal interior & exterior architectural renders with lighting and mood studies.',
+        'Transform company productivity with bespoke AI workflow integrations, LLM pipelines, autonomous agents, and smart databases.',
       customFeatures: [
-        'Exterior & interior renders',
-        'Lighting & mood studies',
-        'Cinematic walkthroughs',
-        'Perfect for architects & real-estate studios'
+        'AI prompt engineering and routing engines',
+        'Bespoke agent workflows and automation scripts',
+        'Integrations with popular LLM providers',
+        'Vector search databases & vector indexing',
+        'Secure API gateways and performance audits'
       ],
-      startingPrice: 1800,
-      estimatedTime: '1–3 weeks'
-    },
-
-    {
-      id: 11,
-      type: 'custom',
-      title: 'Mechanical & Industrial Parts',
-      category: 'Custom Service',
-      description: 'Precision hard-surface assets',
-      priceRange: 'Starting at $1,500',
-      video: vdo1,
-      rating: 5.0,
-      reviews: 34,
-      fullDescription:
-        'Industrial and mechanical parts with manufacturing-ready accuracy.',
-      customFeatures: [
-        'Precision hard-surface modeling',
-        'Manufacturing-ready assets',
-        'Exploded views & visuals',
-        'Perfect for tech companies & product engineers'
-      ],
-      startingPrice: 1500,
-      estimatedTime: '1–2 weeks'
-    },
-
-    {
-      id: 12,
-      type: 'custom',
-      title: '3D Printable Models',
-      category: 'Custom Service',
-      description: 'STL / OBJ print-ready',
-      priceRange: 'Starting at $500',
-      video: vdo1,
-      rating: 4.8,
-      reviews: 48,
-      fullDescription:
-        'Print-ready geometry with correct wall thickness for functional or collectible models.',
-      customFeatures: [
-        'Print-ready geometry',
-        'Correct wall thickness',
-        'STL / OBJ delivery',
-        'Functional or collectible models',
-        'Perfect for makers & local manufacturing'
-      ],
-      startingPrice: 500,
-      estimatedTime: '3–7 days'
+      startingPrice: 4000,
+      estimatedTime: '2–4 weeks'
     }
   ];
 
