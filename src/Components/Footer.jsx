@@ -56,7 +56,7 @@ const Footer = () => {
                 About Us
               </h3>
               <p className="text-white text-sm  leading-relaxed">
-                Crafti is a premium Product Innovation Studio and Web Development Partner. We help startups and businesses build scalable digital experiences.
+                Crafting smart digital products for startups, businesses, and growing teams.
               </p>
             </div>
 
@@ -66,10 +66,11 @@ const Footer = () => {
                 Services
               </h3>
               <ul className="space-y-2 text-white text-sm ">
-                <li className="hover:text-red-600 transition-colors cursor-pointer">Product Ownership</li>
-                <li className="hover:text-red-600 transition-colors cursor-pointer">Web Development</li>
-                <li className="hover:text-red-600 transition-colors cursor-pointer">UX/UI Design Systems</li>
-                <li className="hover:text-red-600 transition-colors cursor-pointer">AI Product Systems</li>
+                <li className="hover:text-red-600 transition-colors cursor-pointer">Web & Mobile Dev</li>
+                <li className="hover:text-red-600 transition-colors cursor-pointer">Product Management</li>
+                <li className="hover:text-red-600 transition-colors cursor-pointer">UI/UX Strategy</li>
+                <li className="hover:text-red-600 transition-colors cursor-pointer">Startup Support</li>
+                <li className="hover:text-red-600 transition-colors cursor-pointer">AI Workflow Systems</li>
               </ul>
             </div>
 
@@ -81,24 +82,32 @@ const Footer = () => {
 
               <div className="space-y-2">
                 <a
-                  href="mailto:hello@craftistudio.com"
+                  href="mailto:contact@crafti.io"
                   className="flex items-center justify-center sm:justify-start gap-2 text-white text-sm  hover:text-red-600 transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  <span>hello@craftistudio.com</span>
+                  <span>contact@crafti.io</span>
                 </a>
 
                 <a
-                  href="tel:+8801XXXXXXXXX"
+                  href="tel:+237695266214"
                   className="flex items-center justify-center sm:justify-start gap-2 text-white text-sm  hover:text-red-600 transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>+880 1XXXXXXXXX</span>
+                  <span>+237 695 266 214</span>
+                </a>
+
+                <a
+                  href="tel:+237679428243"
+                  className="flex items-center justify-center sm:justify-start gap-2 text-white text-sm  hover:text-red-600 transition-colors"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span>+237 679 428 243</span>
                 </a>
 
                 <div className="flex items-center justify-center sm:justify-start gap-2 text-white text-sm ">
                   <MapPin className="w-4 h-4" />
-                  <span>Dhaka, Bangladesh</span>
+                  <span>Cameroon</span>
                 </div>
               </div>
             </div>
@@ -126,12 +135,10 @@ const Footer = () => {
       {/* Bottom Copyright */}
       <div className="border-t border-gray-800 py-4 md:py-6 px-6 md:px-12 lg:px-20">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-white text-xs md:text-sm text-center sm:text-left">
+          <p className="text-white text-xs md:text-sm text-center sm:text-center">
             © 2026 — All rights reserved by <a href="/" className="text-red-600 hover:text-red-500 transition-colors">Crafti Studio</a>
           </p>
-          <p className="text-gray-500 text-xs md:text-sm text-center sm:text-right">
-            Designed & Engineered by <span className="text-red-600">Crafti Studio</span>
-          </p>
+
         </div>
       </div>
     </footer>

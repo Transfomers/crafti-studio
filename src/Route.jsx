@@ -3,6 +3,7 @@ import Root from "./Root";
 import Home from "./Components/Home";
 import Services from "../src/Pages/Service/Services";
 import OurStudio from "./Pages/OurStudio/OurStudio";
+import Storyboard from "./Pages/Storyboard/Storyboard";
 import ScrollToTop from "./Components/ScrollToTop";
 
 const Route = createBrowserRouter([
@@ -18,6 +19,7 @@ const Route = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/services", element: <Services /> },
       { path: "/our_studio", element: <OurStudio /> },
+      { path: "/storyboard", element: <Storyboard /> },
     ],
   },
 ]);

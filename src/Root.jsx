@@ -89,21 +89,65 @@ const Root = () => {
       { y: 0, opacity: 1, duration: 0.9, ease: "power3.out" }
     );
     tl.to("#intro-text", 
-      { y: -80, opacity: 0, duration: 0.5, delay: 0.8, ease: "power3.in" }
+      { y: -80, opacity: 0, duration: 0.5, delay: 0.8, ease: "power3.in" },
+      "+=0.2"
     );
 
-    // Step 4: Custom Circular C Logo Transition
+    // Step 4: THE PULSE (Scene 1)
+    // Fade in particles & logo svg from within the particle field
+    tl.to("#intro-particles", { opacity: 1, duration: 1.0 });
     tl.fromTo("#intro-logo-svg", 
-      { scale: 0.5, opacity: 0, rotate: -45 }, 
-      { scale: 1, opacity: 1, rotate: 0, duration: 1.2, ease: "power4.out" }
+      { scale: 0.7, opacity: 0, rotate: -45 }, 
+      { scale: 1, opacity: 1, rotate: 0, duration: 1.5, ease: "power4.out" },
+      "-=0.5"
     );
 
-    // Zoom through the logo effect
-    tl.to("#intro-logo-svg", 
-      { scale: 25, opacity: 0, rotate: 15, duration: 1.0, ease: "power4.inOut" }
+    // Let the logo pulse/breathe slightly
+    tl.to("#intro-logo-svg", {
+      scale: 1.03,
+      duration: 1.2,
+      yoyo: true,
+      repeat: 1,
+      ease: "sine.inOut"
+    });
+
+    // Step 5: THE MARK (Scene 5)
+    // Fade in wordmark and slogan beneath the pulsing logo
+    tl.fromTo("#intro-wordmark", 
+      { y: 15, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1.2, ease: "power3.out" },
+      "-=0.6"
     );
+    tl.fromTo("#intro-slogan", 
+      { opacity: 0 },
+      { opacity: 0.5, duration: 1.0, ease: "power2.out" },
+      "-=0.5"
+    );
+
+    // Hold the mark constellation for breathing reflection
+    tl.to("#intro-constellation", {
+      y: -2,
+      duration: 1.5,
+      yoyo: true,
+      repeat: 1,
+      ease: "sine.inOut"
+    });
+
+    // Zoom through the logo transition (Scene 5 -> Home reveal)
+    tl.to("#intro-logo-svg", {
+      scale: 30,
+      rotate: 15,
+      duration: 1.2,
+      ease: "power4.inOut"
+    });
+    tl.to(["#intro-wordmark", "#intro-slogan", "#intro-particles"], {
+      opacity: 0,
+      duration: 0.4,
+      ease: "power3.out"
+    }, "-=1.0");
+    
     tl.to("#cinematic-intro", 
-      { opacity: 0, duration: 0.4, ease: "power3.out" }, 
+      { opacity: 0, duration: 0.5, ease: "power3.out" }, 
       "-=0.6"
     );
   }, []);
@@ -116,6 +160,16 @@ const Root = () => {
           id="cinematic-intro"
           className="fixed inset-0 bg-black z-[9999] flex flex-col items-center justify-center font-KronaOne"
         >
+          {/* Inline styles for automatic floating particle simulation */}
+          <style>{`
+            @keyframes floatUp {
+              0% { transform: translateY(0) scale(0.6); opacity: 0; }
+              20% { opacity: 0.7; }
+              80% { opacity: 0.7; }
+              100% { transform: translateY(-110vh) scale(1.2); opacity: 0; }
+            }
+          `}</style>
+
           {/* Futuristic system grid */}
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:40px_40px] opacity-35" />
           
@@ -123,6 +177,21 @@ const Root = () => {
 
           {/* Glowing ambient red lights */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-red-950/20 blur-[100px]" />
+
+          {/* Crimson Particle Field (Scene 1: The Pulse) */}
+          <div id="intro-particles" className="absolute inset-0 overflow-hidden pointer-events-none opacity-0">
+            {[...Array(25)].map((_, i) => (
+              <div
+                key={i}
+                className="absolute bottom-[-20px] w-1.5 h-1.5 rounded-full bg-[#ff2a35] shadow-[0_0_8px_#ff2a35]"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  animation: `floatUp ${Math.random() * 4 + 3}s linear infinite`,
+                  animationDelay: `${Math.random() * 2}s`
+                }}
+              />
+            ))}
+          </div>
 
           {/* Sequential statement container */}
           <div className="relative text-center overflow-hidden h-32 flex items-center justify-center px-6">
@@ -134,31 +203,54 @@ const Root = () => {
             </h1>
           </div>
 
-          {/* Custom circular C logo SVG for entrance transition */}
-          <div id="intro-logo-svg" className="absolute opacity-0 scale-50 z-20 flex items-center justify-center pointer-events-none">
-            <svg viewBox="0 0 200 200" className="w-48 h-48 md:w-64 md:h-64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <filter id="glow-filter" x="-20%" y="-20%" width="140%" height="140%">
-                  <feGaussianBlur stdDeviation="8" result="blur" />
-                  <feMerge>
-                    <feMergeNode in="blur" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
-              </defs>
-              {/* Outer broken circular C ring in solid white */}
-              <path
-                d="M 95 35 A 65 65 0 1 0 160 100 H 135 A 40 40 0 1 1 95 60 V 35 Z"
-                fill="#ffffff"
-              />
-              {/* Top right corner arrowhead segment in solid crimson red with premium glow */}
-              <path
-                d="M 108 35 H 160 V 87 L 142 87 C 142 74 126 54 108 54 Z"
-                fill="#ff2a35"
-                filter="url(#glow-filter)"
-              />
-            </svg>
+          {/* Custom circular C logo & Brand Constellation (Scene 5: The Mark) */}
+          <div id="intro-constellation" className="relative flex flex-col items-center justify-center z-20 pointer-events-none">
+            
+            {/* The Logo SVG */}
+            <div id="intro-logo-svg" className="opacity-0 scale-50 z-20 flex items-center justify-center">
+              <svg viewBox="0 0 200 200" className="w-40 h-40 sm:w-48 sm:h-48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <filter id="glow-filter-loader" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="8" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+                {/* Outer broken circular C ring in solid white */}
+                <path
+                  d="M 95 35 A 65 65 0 1 0 160 100 H 135 A 40 40 0 1 1 95 60 V 35 Z"
+                  fill="white"
+                />
+                {/* Top right corner arrowhead segment in solid crimson red with premium glow */}
+                <path
+                  d="M 108 35 H 160 V 87 L 142 87 C 142 74 126 54 108 54 Z"
+                  fill="#ff2a35"
+                  filter="url(#glow-filter-loader)"
+                />
+              </svg>
+            </div>
+
+            {/* Wordmark and Slogan (Scene 5 details) */}
+            <div className="flex flex-col items-center mt-6">
+              <h2
+                id="intro-wordmark"
+                className="text-2xl sm:text-3xl font-black text-white uppercase tracking-[0.25em] opacity-0 text-center select-none font-urbanist"
+              >
+                CRAFTI <span className="text-[#ff2a35] drop-shadow-[0_0_15px_#ff2a35]">STUDIO</span>
+              </h2>
+
+              <p
+                id="intro-slogan"
+                className="text-[9px] font-mono tracking-[0.4em] uppercase text-zinc-400 mt-2.5 opacity-0 select-none"
+              >
+                think . craft impact
+              </p>
+            </div>
+
           </div>
+
         </div>
       )}
 

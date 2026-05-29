@@ -6,7 +6,7 @@ const AnimatedButton = () => {
   const socialButtons = [
     { icon: FaFacebookF, label: 'Facebook', link: 'https://facebook.com' },
     { icon: FaYoutube, label: 'YouTube', link: 'https://youtube.com' },
-    { icon: FaLinkedinIn, label: 'LinkedIn', link: 'https://linkedin.com' },
+    { icon: FaLinkedinIn, label: 'LinkedIn', link: 'https://www.linkedin.com/company/crafti-studio/?viewAsMember=true' },
     { icon: FaInstagram, label: 'Instagram', link: 'https://instagram.com' },
   ];
 

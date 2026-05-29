@@ -33,7 +33,7 @@ const Skiper17 = () => {
           py-8 sm:py-10 md:py-14 lg:py-20
           text-3xl sm:text-4xl md:text-5xl lg:text-[6vw] text-center
         ">
-          SHOWREEL
+          MOVE NOW
         </h1>
 
         {/* Sticky Cards */}

@@ -89,6 +89,7 @@ const Nav = () => {
     { to: "/", label: "HOME" },
     { to: "/services", label: "CAPABILITIES" },
     { to: "/our_studio", label: "STUDIO" },
+    { to: "/storyboard", label: "STORYBOARD" },
   ];
 
   return (

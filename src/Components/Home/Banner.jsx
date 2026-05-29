@@ -5,7 +5,7 @@ import saasMockup from "../../assets/saas_mockup.png";
 
 const openWhatsApp = () => {
   window.open(
-    "https://wa.me/8801764308876",
+    "https://wa.me/237695266214",
     "_blank",
     "noopener,noreferrer"
   );

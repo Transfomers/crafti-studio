@@ -24,6 +24,14 @@ const Description = () => {
           whileHover={{ y: -4 }}
           className="space-y-4 sm:space-y-5 p-6 sm:p-8 hover:shadow-[0_0_40px_rgba(239,68,68,0.15)] transition-all duration-500 border border-zinc-800 rounded-2xl bg-zinc-950/20 backdrop-blur-md"
         >
+          {/* Slogan Idea Badge */}
+          <div className="inline-flex items-center gap-2 px-2.5 py-1.5 bg-red-950/20 border border-red-500/20 rounded-[2px] mb-2 font-urbanist">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ff2a35] animate-pulse" />
+            <span className="text-[9px] font-bold tracking-widest uppercase text-[#ff2a35]">
+              Where ideas become products
+            </span>
+          </div>
+
           <h3 className="text-xl sm:text-2xl font-kronaOne">
             <span className="text-red-500">1. </span>Strategic <span className="text-red-500">Product Development</span>
           </h3>
@@ -79,6 +87,14 @@ const Description = () => {
           whileHover={{ y: -4 }}
           className="space-y-4 sm:space-y-5 p-6 sm:p-8 hover:shadow-[0_0_40px_rgba(239,68,68,0.15)] transition-all duration-500 border border-zinc-800 rounded-2xl bg-zinc-950/20 backdrop-blur-md"
         >
+          {/* Slogan Idea Badge */}
+          <div className="inline-flex items-center gap-2 px-2.5 py-1.5 bg-red-950/20 border border-red-500/20 rounded-[2px] mb-2 font-urbanist">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ff2a35] animate-pulse" />
+            <span className="text-[9px] font-bold tracking-widest uppercase text-[#ff2a35]">
+              Think smarter. Build faster.
+            </span>
+          </div>
+
           <h3 className="text-xl sm:text-2xl font-kronaOne">
             <span className="text-red-500">2. </span> Continuous <span className="text-red-500">Product Ownership</span>
           </h3>
